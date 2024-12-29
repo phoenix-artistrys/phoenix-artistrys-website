@@ -1,0 +1,14 @@
+.block_background_white {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+  background-color: #fffeeb;
+  box-shadow: inset 0px 0px 30px #101010;
+  border-radius: 3.2rem;
+}
+
+

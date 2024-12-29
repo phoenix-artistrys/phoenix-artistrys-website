@@ -1,0 +1,49 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Header.css";
+import { useEffect, useState } from "react";
+
+function Header({ Phoenix }) {
+  const [opacity, setOpacity] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const newOpacity = Math.min(scrollY / 800, 1);
+      setOpacity(newOpacity);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <header style={{ opacity }}>
+      <nav>
+        <menu>
+          <li>
+            <Link
+              to="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <img src={Phoenix} alt="Phoenix Logo" className="phoenix_logo" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/submit"
+              className="call_to_action"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              Submit
+            </Link>
+          </li>
+        </menu>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;

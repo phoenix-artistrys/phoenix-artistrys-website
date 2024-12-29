@@ -1,0 +1,72 @@
+#music_icons_container {
+  padding-top: 3.5rem;
+}
+
+.music_icons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 0rem;
+  margin-bottom: 10rem;
+  padding: 2rem 0rem;
+  background-color: #2828287e;
+  box-shadow: inset 0px 0px 18px #878aaa, 0px 0px 18px #878aaab3;
+  border: #878aaa75 1px solid;
+  border-radius: 3.2rem;
+  backdrop-filter: blur(10px);
+  /* legacy chrome safari support */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.music_img_link {
+  width: 120px;
+  height: 120px;
+  padding: 0.5rem;
+}
+
+.music_img_link:hover {
+  transform: scale(1.2) rotate(-7deg);
+  transition: 0.1s linear;
+}
+
+#insta {
+  width: 90px;
+  height: 90px;
+}
+
+#apple_music {
+  width: 90px;
+  height: 90px;
+}
+
+#spotify {
+  width: 90px;
+  height: 90px;
+}
+
+/* mobile */
+
+@media (max-width: 50em) {
+  .music_img_link {
+    padding: 1.2rem;
+  }
+
+  #insta {
+    width: 120px;
+    height: 120px;
+  }
+
+  #apple_music {
+    width: 120px;
+    height: 120px;
+  }
+
+  #spotify {
+    width: 120px;
+    height: 120px;
+  }
+}

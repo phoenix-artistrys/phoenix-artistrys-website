@@ -1,0 +1,71 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.625rem;
+  pointer-events: none;
+}
+
+nav {
+  width: 25rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1.8rem 0.7rem;
+  border-radius: 2rem;
+  background-color: #2828287e;
+  box-shadow: inset 0px 0px 13px #878aaa, 0px 0px 18px #878aaab3;
+  border: #878aaa75 1px solid;
+  backdrop-filter: blur(10px);
+  /* legacy chrome safari support */
+  -webkit-backdrop-filter: blur(10px);
+  color: #fffeeb;
+  pointer-events: all;
+}
+
+menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.button_link,
+.button_link:visited,
+.button_link:active {
+  width: 7rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  color: #000000;
+  background: #ffb703;
+  border: none;
+  border-radius: 2.2rem;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+
+.button_link:hover {
+  color: #fffeeb;
+  background: #101010;
+  box-shadow: 0px 0px 1rem #7cb3ff;
+}
+
+/* phoenix_img */
+
+.phoenix_logo {
+  margin-top: 0.7rem;
+  width: 2.7rem;
+  height: 2.7rem;
+}

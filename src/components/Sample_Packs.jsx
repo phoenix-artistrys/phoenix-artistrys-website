@@ -1,0 +1,53 @@
+function Sample_Packs() {
+  const handleContextMenu = (event) => {
+    event.preventDefault();
+  };
+
+  return (
+    <div
+      className="block_background_white block_background_dark block_padding"
+      id="sample_packs"
+    >
+      <div className="flex_center sample_pack_container">
+        <img
+          src="/sample_packs/voltage.png"
+          alt="Swamp Citae sample pack img"
+          className="sample_pack_image"
+          id="swamp"
+          onContextMenu={handleContextMenu}
+        />
+        <img
+          src="/sample_packs/angel.png"
+          alt="ChillyFex Angel sample pack img"
+          className="sample_pack_image"
+          id="angel"
+          onContextMenu={handleContextMenu}
+        />
+        <img
+          src="/sample_packs/digital.png"
+          alt="Swamp Citae Digital sample pack img"
+          className="sample_pack_image"
+          id="swamp"
+          onContextMenu={handleContextMenu}
+        />
+        <img
+          src="/sample_packs/giant.png"
+          alt="ChillyFex Giant sample pack img"
+          className="sample_pack_image"
+          id="angel"
+          onContextMenu={handleContextMenu}
+        />
+      </div>
+      <h2 className="center_text">Sample Packs</h2>
+      <a
+        href="https://sites.google.com/view/phoenix-sample-packs/free-downloads"
+        className="hero_link"
+        id="sample_packs_link"
+      >
+        Download
+      </a>
+    </div>
+  );
+}
+
+export default Sample_Packs;

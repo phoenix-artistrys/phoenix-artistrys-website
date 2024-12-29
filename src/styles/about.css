@@ -1,0 +1,31 @@
+#about_container {
+  margin-bottom: 10rem;
+}
+
+#about_header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 0.4rem #fffeeb;
+}
+
+#about_sub_header {
+  margin-bottom: 1rem;
+  padding-top: 0.1rem;
+  /* color: #101010;
+  background-color: #fffeeb; */
+  border-radius: 3.2rem;
+}
+
+#about_details {
+  margin-bottom: 1.5rem;
+  /* padding: 2rem; */
+  /* color: #101010;
+  background-color: #fffeeb; */
+  border-radius: 3.2rem;
+}
+
+@media (max-width: 50rem) {
+    #about_sub_header {
+      font-size: 1.4rem;
+    }
+}
