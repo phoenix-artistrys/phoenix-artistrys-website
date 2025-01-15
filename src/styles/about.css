@@ -6,21 +6,18 @@
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: solid 0.4rem #fffeeb;
+  text-shadow: #fffeeb7e 0px 0px 35px;
 }
 
 #about_sub_header {
   margin-bottom: 1rem;
   padding-top: 0.1rem;
-  /* color: #101010;
-  background-color: #fffeeb; */
   border-radius: 3.2rem;
+  text-shadow: #fffeeb7e 0px 0px 35px;
 }
 
 #about_details {
   margin-bottom: 1.5rem;
-  /* padding: 2rem; */
-  /* color: #101010;
-  background-color: #fffeeb; */
   border-radius: 3.2rem;
 }
 
