@@ -16,9 +16,63 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_downward"
     />
+
     <title>Phoenix Artistrys</title>
   </head>
   <body style="background: #101010">
+    <!-- netlify form helper code -->
+    <form
+      name="submit"
+      method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      className="form_base"
+      hidden
+    >
+      <input type="text" name="name" />
+
+      <select name="release_type">
+        <option value="" selected disabled></option>
+        <option value="single"></option>
+        <option value="ab"></option>
+        <option value="ep"></option>
+        <option value="lp"></option>
+        <option value="album"></option>
+      </select>
+
+      <select name="genre">
+        <option value="" selected disabled></option>
+        <option value="dubstep"></option>
+        <option value="dnb"></option>
+        <option value="future_bass"></option>
+        <option value="house"></option>
+        <option value="trance"></option>
+        <option value="techno"></option>
+        <option value="chillout"></option>
+        <option value="pop"></option>
+        <option value="cinematic"></option>
+        <option value="other"></option>
+      </select>
+
+      <input type="text" name="other" />
+
+      <select name="lyrics">
+        <option value="" selected disabled></option>
+        <option value="yes"></option>
+        <option value="no"></option>
+      </select>
+
+      <input type="text" name="audio_demo_link" />
+
+      <input type="checkbox" name="lyrics" />
+
+      <input type="checkbox" name="revenue" />
+
+      <input type="checkbox" name="terms" />
+    </form>
+
+    <!-- netlify form helper code end -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

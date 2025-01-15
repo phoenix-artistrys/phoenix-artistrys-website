@@ -89,6 +89,9 @@ iframe {
   height: 100vh;
   text-align: left;
   background-color: #0000009d;
+  backdrop-filter: blur(0.8px);
+  /* legacy chrome safari support */
+  -webkit-backdrop-filter: blur(0.8px);
 }
 
 /* typography */
@@ -150,6 +153,27 @@ summary {
   color: #101010;
 }
 
+.caps {
+  text-transform: uppercase;
+}
+
+.left_alight {
+  text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.red {
+  color: #ff4339;
+}
+
+.glow {
+  text-shadow: 0px 0px 35px #ffbab7;
+}
+
 /* links */
 
 ul,
@@ -180,6 +204,7 @@ span.arrow_down {
 
 span.arrow_down:hover {
   border-bottom: solid 0.2rem #ffffff;
+  animation: transformUpDown 0.7s ease-in-out infinite;
 }
 
 /* buttons */
@@ -239,6 +264,7 @@ button:focus-visible,
   background-color: #ffffff;
   background: linear-gradient(250deg, #fffeeb 0%, #ffffff 100%);
   color: #000000;
+  text-decoration: none;
   animation: fadeBoxShadow 1.5s infinite alternate;
 }
 
@@ -269,17 +295,6 @@ button:focus-visible,
   background-color: #000000;
 }
 
-/* keyframes */
-
-@keyframes fadeBoxShadow {
-  0% {
-    box-shadow: 0px 0px 2rem 0.4rem #408fff;
-  }
-  100% {
-    box-shadow: 0px 0px 2rem 0.4rem #ffb811;
-  }
-}
-
 /* mobile */
 
 @media (max-width: 50rem) {
@@ -298,5 +313,28 @@ button:focus-visible,
 
   #hero_button_div {
     margin-top: 3rem;
+  }
+}
+
+/* keyframes */
+
+@keyframes fadeBoxShadow {
+  0% {
+    box-shadow: 0px 0px 2rem 0.4rem #408fff;
+  }
+  100% {
+    box-shadow: 0px 0px 2rem 0.4rem #ffb811;
+  }
+}
+
+@keyframes transformUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
