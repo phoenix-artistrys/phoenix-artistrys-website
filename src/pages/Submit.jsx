@@ -19,6 +19,27 @@ function Submit() {
     };
   }, []);
 
+  const [formData, setFormData] = useState({
+    name: "",
+    release_name: "",
+    release_type: "",
+    genre: "",
+    other: "",
+    lyrics: "",
+    audio_demo_link: "",
+    lyrics_checkbox: false,
+    revenue_checkbox: false,
+    terms_checkbox: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
   return (
     <>
       <Top_Banner Banner_Video={Banner_Video} />
@@ -50,6 +71,7 @@ function Submit() {
             // data-netlify-recaptcha="true"
             data-netlify="true"
             className="form_base"
+            onChange={handleChange}
           >
             {/* artist name */}
             <p>
@@ -59,6 +81,8 @@ function Submit() {
                   type="text"
                   name="name"
                   className="input_base"
+                  value={formData.name}
+                  onChange={handleChange}
                   required
                 />
               </label>
@@ -71,6 +95,8 @@ function Submit() {
                   type="text"
                   name="release_name"
                   className="input_base"
+                  value={formData.release_name}
+                  onChange={handleChange}
                   required
                 />
               </label>
@@ -79,8 +105,14 @@ function Submit() {
             <p>
               <label className="label_base">
                 Release Type:{" "}
-                <select name="release_type" className="input_base" required>
-                  <option value="" selected disabled>
+                <select
+                  name="release_type"
+                  className="input_base"
+                  value={formData.release_type}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="" defaultValue disabled>
                     Select{" "}
                   </option>
                   <option value="single">Single</option>
@@ -95,8 +127,14 @@ function Submit() {
             <p>
               <label className="label_base">
                 Genre:{" "}
-                <select name="genre" className="input_base" required>
-                  <option value="" selected disabled>
+                <select
+                  name="genre"
+                  className="input_base"
+                  value={formData.genre}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="" defaultValue disabled>
                     Select{" "}
                   </option>
                   <option value="dubstep">Dubstep</option>
@@ -121,14 +159,22 @@ function Submit() {
                   name="other"
                   placeholder="e.g. Vaperwave"
                   className="input_base other_description"
+                  value={formData.other}
+                  onChange={handleChange}
                 ></input>
               </label>
             </p>
             <p>
               <label className="label_base">
                 Lyrics:{" "}
-                <select name="lyrics" className="input_base" required>
-                  <option value="" selected disabled>
+                <select
+                  name="lyrics"
+                  className="input_base"
+                  value={formData.lyrics}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="" defaultValue disabled>
                     Select{" "}
                   </option>
                   <option value="yes">Yes</option>
@@ -145,6 +191,8 @@ function Submit() {
                   name="audio_demo_link"
                   className="input_base"
                   placeholder="SoundCloud & WeTransfer ONLY"
+                  value={formData.audio_demo_link}
+                  onChange={handleChange}
                   required
                 />
               </label>
@@ -161,7 +209,14 @@ function Submit() {
               </article>
               <p>
                 <label className="form_text glow">
-                  <input type="checkbox" name="lyrics" required /> I Accept
+                  <input
+                    type="checkbox"
+                    name="lyrics_checkbox"
+                    checked={formData.lyrics_checkbox}
+                    onChange={handleChange}
+                    required
+                  />{" "}
+                  I Accept
                 </label>
               </p>
             </div>
@@ -177,7 +232,14 @@ function Submit() {
             {/* terms and conditions checkbox */}
             <p>
               <label className="form_text glow">
-                <input type="checkbox" name="revenue" required /> I Understand
+                <input
+                  type="checkbox"
+                  name="revenue"
+                  checked={formData.revenue_checkbox}
+                  onChange={handleChange}
+                  required
+                />{" "}
+                I Understand
               </label>
             </p>
             {/* agreements */}
@@ -192,7 +254,14 @@ function Submit() {
             {/* terms and conditions checkbox */}
             <p>
               <label className="form_text glow">
-                <input type="checkbox" name="terms" required /> I Accept
+                <input
+                  type="checkbox"
+                  name="terms_checkbox"
+                  checked={formData.terms_checkbox}
+                  onChange={handleChange}
+                  required
+                />{" "}
+                I Accept
               </label>
             </p>
             <article className="form_text_container">
