@@ -246,7 +246,7 @@ function Submit() {
             <article className="form_text_container">
               <p className="form_text">
                 Phoenix Artistrys offers a{" "}
-                <span className="underline bold">60/40 revenue split</span>{" "}
+                <span className="underline bold">40/40 revenue split</span>{" "}
                 &#x28;60% artists, 40% label&#x29;, we are open to negotiation
                 on these terms.
               </p>
