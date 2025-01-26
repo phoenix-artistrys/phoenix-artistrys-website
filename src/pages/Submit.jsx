@@ -22,7 +22,7 @@ function Submit() {
   const [formData, setFormData] = useState({
     name: "",
     release: "",
-    type: "",
+    release_type: "",
     genre: "",
     other: "",
     lyrics_yes_no: "",
@@ -66,13 +66,10 @@ function Submit() {
           {/* Submission form */}
           <form
             name="submit"
-            // action="/pages/Success.jsx"
             method="POST"
             netlify-honeypot="bot-field"
-            // data-netlify-recaptcha="true"
             data-netlify="true"
             className="form_base"
-            onChange={handleChange}
           >
             <input type="hidden" name="form-name" value="submit" />
 
@@ -111,9 +108,9 @@ function Submit() {
               <label className="label_base">
                 Release Type:{" "}
                 <select
-                  name="type"
+                  name="release_type"
                   className="input_base"
-                  value={formData.type}
+                  value={formData.release_type}
                   onChange={handleChange}
                   required
                 >
