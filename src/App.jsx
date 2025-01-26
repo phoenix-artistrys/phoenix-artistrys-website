@@ -1,4 +1,5 @@
-import { useState } from "react";
+// COPYRIGHT 2025 TANNER MARSH, NAIT WELSH & AIDAN YIP ALL RIGHTS RESERVED
+
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";

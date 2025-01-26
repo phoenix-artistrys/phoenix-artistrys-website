@@ -1,3 +1,5 @@
+// COPYRIGHT 2025 TANNER MARSH, NAIT WELSH & AIDAN YIP ALL RIGHTS RESERVED
+
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
