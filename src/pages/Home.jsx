@@ -1,3 +1,5 @@
+// COPYRIGHT 2025 TANNER MARSH, NAIT WELSH & AIDAN YIP ALL RIGHTS RESERVED
+
 import { Link } from "react-router-dom";
 import Arrow_Down from "../components/Arrow_Down.jsx";
 import link_to from "../components/Arrow_Down.jsx";
