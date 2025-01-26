@@ -95,7 +95,7 @@ function Submit() {
                 Release Name:
                 <input
                   type="text"
-                  name="music_name"
+                  name="release_name"
                   className="input_base"
                   value={formData.release_name}
                   onChange={handleChange}
