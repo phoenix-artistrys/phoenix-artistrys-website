@@ -21,7 +21,7 @@ function Submit() {
 
   const [formData, setFormData] = useState({
     name: "",
-    release: "",
+    release_name: "",
     release_type: "",
     genre: "",
     other: "",
@@ -95,9 +95,9 @@ function Submit() {
                 Release Name:
                 <input
                   type="text"
-                  name="release"
+                  name="release_name"
                   className="input_base"
-                  value={formData.release}
+                  value={formData.release_name}
                   onChange={handleChange}
                   required
                 />
