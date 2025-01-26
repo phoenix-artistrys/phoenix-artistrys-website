@@ -235,7 +235,7 @@ function Submit() {
               <label className="form_text glow">
                 <input
                   type="checkbox"
-                  name="revenue"
+                  name="revenue_checkbox"
                   checked={formData.revenue_checkbox}
                   onChange={handleChange}
                   required
