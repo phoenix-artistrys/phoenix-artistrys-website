@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Arrow_Down from "../components/Arrow_down";
-import link_to from "../components/Arrow_down";
+import Arrow_Down from "../components/Arrow_Down";
+import link_to from "../components/Arrow_Down";
 import Top_Banner from "../components/Top_Banner";
 import Banner_Video from "/phoenix_hero_sub.mp4"; // Import the banner video
 
