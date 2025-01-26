@@ -28,9 +28,9 @@ function Submit() {
     has_lyrics: "",
     audio_demo_link: "",
     email: "",
-    lyrics: false,
-    revenue: false,
-    terms: false,
+    lyrics_checkbox: false,
+    revenue_checkbox: false,
+    terms_checkbox: false,
   });
 
   const handleChange = (e) => {
@@ -233,8 +233,8 @@ function Submit() {
               <label className="form_text glow">
                 <input
                   type="checkbox"
-                  name="lyrics"
-                  checked={formData.lyrics}
+                  name="lyrics_checkbox"
+                  checked={formData.lyrics_checkbox}
                   onChange={handleChange}
                   required
                 />{" "}
@@ -257,8 +257,8 @@ function Submit() {
               <label className="form_text glow">
                 <input
                   type="checkbox"
-                  name="revenue"
-                  checked={formData.revenue}
+                  name="revenue_checkbox"
+                  checked={formData.revenue_checkbox}
                   onChange={handleChange}
                   required
                 />{" "}
@@ -281,8 +281,8 @@ function Submit() {
               <label className="form_text glow">
                 <input
                   type="checkbox"
-                  name="terms"
-                  checked={formData.terms}
+                  name="terms_checkbox"
+                  checked={formData.terms_checkbox}
                   onChange={handleChange}
                   required
                 />{" "}
