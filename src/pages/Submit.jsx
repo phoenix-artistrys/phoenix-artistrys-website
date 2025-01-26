@@ -70,6 +70,7 @@ function Submit() {
             netlify-honeypot="bot-field"
             data-netlify="true"
             className="form_base"
+            onChange={handleChange}
           >
             <input type="hidden" name="form-name" value="submit" />
 
