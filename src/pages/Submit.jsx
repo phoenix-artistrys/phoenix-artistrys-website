@@ -21,7 +21,7 @@ function Submit() {
 
   const [formData, setFormData] = useState({
     name: "",
-    music_name: "",
+    release_name: "",
     release_type: "",
     genre: "",
     other: "",
@@ -109,9 +109,9 @@ function Submit() {
               <label className="label_base">
                 Release Type:{" "}
                 <select
-                  name="release_type"
+                  name="release_name"
                   className="input_base"
-                  value={formData.release_type}
+                  value={formData.release_name}
                   onChange={handleChange}
                   required
                 >
@@ -209,7 +209,7 @@ function Submit() {
               <label className="label_base">
                 Email:{" "}
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   className="input_base"
                   value={formData.email}
