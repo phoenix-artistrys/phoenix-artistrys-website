@@ -39,9 +39,9 @@ function Home() {
             <iframe
               src="https://www.youtube-nocookie.com/embed/qWbVPV-Hq5A?si=mHmd77xuZYzH_XjM&amp;start=1"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
+              frameBorder="0"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
 
