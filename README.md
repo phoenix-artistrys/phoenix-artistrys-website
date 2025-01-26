@@ -1,5 +1,5 @@
-# Phoenix Artistry's backup
+# Phoenix Artistrys Official Website
 
-Backup repo for Phoenix Artistry's site
+## Created by Aidan Yip using React + Vite and the Netlify API
 
-
+### Commissioned by Phoenix Artistrys
