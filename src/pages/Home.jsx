@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Arrow_Down from "../components/Arrow_down.jsx";
-import link_to from "../components/Arrow_down";
+import Arrow_Down from "../components/Arrow_Down.jsx";
+import link_to from "../components/Arrow_Down.jsx";
 import Music_Icons from "../components/Music_Icons";
 import Artists from "../components/Artists";
 import Sample_Packs from "../components/Sample_Packs";
