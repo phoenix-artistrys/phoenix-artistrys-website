@@ -97,7 +97,7 @@ function Submit() {
                   type="text"
                   name="music_name"
                   className="input_base"
-                  value={formData.music_name}
+                  value={formData.release_name}
                   onChange={handleChange}
                   required
                 />
@@ -109,9 +109,9 @@ function Submit() {
               <label className="label_base">
                 Release Type:{" "}
                 <select
-                  name="release_name"
+                  name="release_type"
                   className="input_base"
-                  value={formData.release_name}
+                  value={formData.release_type}
                   onChange={handleChange}
                   required
                 >
