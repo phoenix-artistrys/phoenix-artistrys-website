@@ -21,15 +21,16 @@ function Submit() {
 
   const [formData, setFormData] = useState({
     name: "",
-    release_name: "",
+    release: "",
     release_type: "",
     genre: "",
     other: "",
-    lyrics: "",
+    lyrics_yes_no: "",
     audio_demo_link: "",
-    lyrics_checkbox: false,
-    revenue_checkbox: false,
-    terms_checkbox: false,
+    email: "",
+    lyrics: false,
+    revenue: false,
+    terms: false,
   });
 
   const handleChange = (e) => {
@@ -91,12 +92,12 @@ function Submit() {
             {/* release name */}
             <p>
               <label className="label_base">
-                Release Name:{" "}
+                Release Name:
                 <input
                   type="text"
-                  name="release_name"
+                  name="release"
                   className="input_base"
-                  value={formData.release_name}
+                  value={formData.release}
                   onChange={handleChange}
                   required
                 />
@@ -169,9 +170,9 @@ function Submit() {
               <label className="label_base">
                 Lyrics:{" "}
                 <select
-                  name="lyrics"
+                  name="lyrics_yes_no"
                   className="input_base"
-                  value={formData.lyrics}
+                  value={formData.lyrics_yes_no}
                   onChange={handleChange}
                   required
                 >
@@ -198,6 +199,22 @@ function Submit() {
                 />
               </label>
             </p>
+            {/* email */}
+            <p>
+              <label className="label_base">
+                Email:{" "}
+                <input
+                  type="email"
+                  name="email"
+                  className="input_base"
+                  value={formData.email}
+                  onChange={handleChange}
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Please enter a valid email address"
+                  required
+                />
+              </label>
+            </p>
             {/* lyric terms and conditions - hidden before click */}
             <div className="lyric_terms">
               <article className="form_text_container">
@@ -212,8 +229,8 @@ function Submit() {
                 <label className="form_text glow">
                   <input
                     type="checkbox"
-                    name="lyrics_checkbox"
-                    checked={formData.lyrics_checkbox}
+                    name="lyrics"
+                    checked={formData.lyrics}
                     onChange={handleChange}
                     required
                   />{" "}
@@ -226,7 +243,7 @@ function Submit() {
               <p className="form_text">
                 Phoenix Artistrys offers a{" "}
                 <span className="underline bold">60/40 revenue split</span>{" "}
-                &#x28;60% artists, 40% distributor&#x29;, we are open to
+                &#x28;60% artists, 40% label&#x29;, we are open to
                 negotiation on these terms.
               </p>
             </article>
@@ -235,8 +252,8 @@ function Submit() {
               <label className="form_text glow">
                 <input
                   type="checkbox"
-                  name="revenue_checkbox"
-                  checked={formData.revenue_checkbox}
+                  name="revenue"
+                  checked={formData.revenue}
                   onChange={handleChange}
                   required
                 />{" "}
