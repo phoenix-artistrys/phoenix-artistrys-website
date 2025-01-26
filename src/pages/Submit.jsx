@@ -73,6 +73,7 @@ function Submit() {
             className="form_base"
             onChange={handleChange}
           >
+            <input type="hidden" name="form-name" value="submit" />
             {/* artist name */}
             <p>
               <label className="label_base">
