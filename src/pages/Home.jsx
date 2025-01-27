@@ -9,10 +9,12 @@ import Sample_Packs from "../components/Sample_Packs";
 import About from "../components/About";
 import Top_Banner from "../components/Top_Banner";
 import Banner_Video from "/phoenix_hero.mp4"; // Import the banner video
+import Header from "../components/Header";
 
 function Home() {
   return (
     <>
+      <Header navlink="/submit" navlink_text="Submit" />
       <Top_Banner Banner_Video={Banner_Video} />
       <main id="main_content">
         {/* Banner */}

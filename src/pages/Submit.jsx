@@ -7,19 +7,20 @@ import Arrow_Down from "../components/Arrow_Down";
 import link_to from "../components/Arrow_Down";
 import Top_Banner from "../components/Top_Banner";
 import Banner_Video from "/phoenix_hero_sub.mp4"; // Import the banner video
+import Header from "../components/Header";
 
 function Submit() {
-  useEffect(() => {
-    const header = document.querySelector("header");
-    if (header) {
-      header.style.display = "none";
-    }
-    return () => {
-      if (header) {
-        header.style.display = "";
-      }
-    };
-  }, []);
+  // useEffect(() => {
+  //   const header = document.querySelector("header");
+  //   if (header) {
+  //     header.style.display = "none";
+  //   }
+  //   return () => {
+  //     if (header) {
+  //       header.style.display = "";
+  //     }
+  //   };
+  // }, []);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -45,6 +46,7 @@ function Submit() {
 
   return (
     <>
+      <Header navlink="/" navlink_text="Home" />
       <Top_Banner Banner_Video={Banner_Video} />
       <main>
         {/* Banner */}
@@ -117,7 +119,7 @@ function Submit() {
                   onChange={handleChange}
                   required
                 >
-                  <option value="" selected disabled>
+                  <option value="" defaultValue disabled>
                     Select{" "}
                   </option>
                   <option value="single">Single</option>
