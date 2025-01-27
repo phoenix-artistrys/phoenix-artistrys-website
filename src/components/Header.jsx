@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import Phoenix from "/phoenix_dark_logo.png"; // Import the Phoenix logo
 
-function Header() {
+function Header({ navlink, navlink_text }) {
   const [opacity, setOpacity] = useState(0);
 
   useEffect(() => {
@@ -34,11 +34,11 @@ function Header() {
           </li>
           <li>
             <Link
-              to="/submit"
+              to={navlink}
               className="call_to_action"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-              Submit
+              {navlink_text}
             </Link>
           </li>
         </menu>
