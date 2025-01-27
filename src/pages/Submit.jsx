@@ -225,95 +225,97 @@ function Submit() {
             </p>
 
             {/* lyric terms and conditions - hidden before click */}
-            <article className="form_text_container">
-              <p className="form_text left_alight">
-                Phoenix Artistrys{" "}
-                <span className="underline bold red">
-                  does not accept tracks with explicit lyrics.
-                </span>{" "}
+            <fieldset>
+              <article className="form_text_container no_border">
+                <p className="form_text left_alight">
+                  Phoenix Artistrys{" "}
+                  <span className="underline bold red">
+                    does not accept tracks with explicit lyrics.
+                  </span>{" "}
+                </p>
+              </article>
+              <p>
+                <label className="form_text glow">
+                  <input
+                    type="checkbox"
+                    name="lyrics_checkbox"
+                    checked={formData.lyrics_checkbox}
+                    onChange={handleChange}
+                    required
+                  />{" "}
+                  I Accept
+                </label>
               </p>
-            </article>
-            <p>
-              <label className="form_text glow">
-                <input
-                  type="checkbox"
-                  name="lyrics_checkbox"
-                  checked={formData.lyrics_checkbox}
-                  onChange={handleChange}
-                  required
-                />{" "}
-                I Accept
-              </label>
-            </p>
 
-            {/* revenue info */}
-            <article className="form_text_container">
-              <p className="form_text">
-                Phoenix Artistrys offers a{" "}
-                <span className="underline bold">40/40 revenue split</span>{" "}
-                &#x28;60% artists, 40% label&#x29;, we are open to negotiation
-                on these terms.
+              {/* revenue info */}
+              <article className="form_text_container">
+                <p className="form_text">
+                  Phoenix Artistrys offers a{" "}
+                  <span className="underline bold">40/40 revenue split</span>{" "}
+                  &#x28;40% artists, 40% label&#x29;, we are open to negotiation
+                  on these terms.
+                </p>
+              </article>
+
+              {/* terms and conditions checkbox */}
+              <p>
+                <label className="form_text glow">
+                  <input
+                    type="checkbox"
+                    name="revenue_checkbox"
+                    checked={formData.revenue_checkbox}
+                    onChange={handleChange}
+                    required
+                  />{" "}
+                  I Understand
+                </label>
               </p>
-            </article>
 
-            {/* terms and conditions checkbox */}
-            <p>
-              <label className="form_text glow">
-                <input
-                  type="checkbox"
-                  name="revenue_checkbox"
-                  checked={formData.revenue_checkbox}
-                  onChange={handleChange}
-                  required
-                />{" "}
-                I Understand
-              </label>
-            </p>
+              {/* agreements */}
+              <article className="form_text_container">
+                <p className="form_text">
+                  Phoenix Artistrys{" "}
+                  <span className="underline">
+                    will distribute accepted tracks to major platforms.
+                  </span>{" "}
+                </p>
+              </article>
 
-            {/* agreements */}
-            <article className="form_text_container">
-              <p className="form_text">
-                Phoenix Artistrys{" "}
-                <span className="underline">
-                  will distribute accepted tracks to major platforms.
-                </span>{" "}
+              {/* terms and conditions checkbox */}
+              <p>
+                <label className="form_text glow">
+                  <input
+                    type="checkbox"
+                    name="terms_checkbox"
+                    checked={formData.terms_checkbox}
+                    onChange={handleChange}
+                    required
+                  />{" "}
+                  I Accept
+                </label>
               </p>
-            </article>
+              <article className="form_text_container">
+                <p className="form_text">
+                  Further details can be found in our{" "}
+                  <a
+                    className="blue_link"
+                    href="https://sites.google.com/view/submit-to-phoenix/home"
+                  >
+                    Terms & Conditions
+                  </a>
+                </p>
+              </article>
 
-            {/* terms and conditions checkbox */}
-            <p>
-              <label className="form_text glow">
-                <input
-                  type="checkbox"
-                  name="terms_checkbox"
-                  checked={formData.terms_checkbox}
-                  onChange={handleChange}
-                  required
-                />{" "}
-                I Accept
-              </label>
-            </p>
-            <article className="form_text_container">
-              <p className="form_text">
-                Further details can be found in our{" "}
-                <a
-                  className="blue_link"
-                  href="https://sites.google.com/view/submit-to-phoenix/home"
+              {/* submit button */}
+              <p>
+                <button
+                  type="submit"
+                  className="hero_link call_to_action music_submit"
                 >
-                  Terms & Conditions
-                </a>
+                  Submit
+                </button>
               </p>
-            </article>
-
-            {/* submit button */}
-            <p>
-              <button
-                type="submit"
-                className="hero_link call_to_action music_submit"
-              >
-                Submit
-              </button>
-            </p>
+            </fieldset>
           </form>
         </section>
       </main>
