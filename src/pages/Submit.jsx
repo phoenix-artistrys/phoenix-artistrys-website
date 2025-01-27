@@ -50,7 +50,7 @@ function Submit() {
       <Top_Banner Banner_Video={Banner_Video} />
       <main>
         {/* Banner */}
-        <section className="banner_content">
+        <section className="banner_content lighter_filter">
           <h1 className="hero_title">Submission</h1>
           <div id="hero_button_div">
             <Link
