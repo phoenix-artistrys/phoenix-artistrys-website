@@ -103,6 +103,10 @@ iframe {
   -webkit-backdrop-filter: blur(0.8px);
 }
 
+.lighter_filter {
+  background-color: #00000072;
+}
+
 /* typography */
 
 h1 {
