@@ -56,11 +56,16 @@ a:hover {
   align-items: center;
   width: 100%;
   max-width: 40rem;
-
   margin-bottom: 1rem;
   padding: 1rem;
   /* border-radius: 1rem; */
   border-top: #2c3954 1px solid;
+}
+
+fieldset {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: #2c3954 1px solid;
 }
 
 .flex_center {
@@ -71,6 +76,10 @@ a:hover {
 
 #demo_info {
   margin-top: 0rem;
+}
+
+.no_border {
+  border: none;
 }
 
 /* inputs */
@@ -112,7 +121,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  margin-left: 0rem;
+  margin-left: 0.9rem;
 }
 
 input[type="checkbox"] {
@@ -133,6 +142,12 @@ input[type="checkbox"]:hover {
 
 @media (min-width: 50rem) {
   .input_base {
+    width: 50rem;
+    max-width: 50rem;
+    max-width: 40rem;
+  }
+
+  fieldset {
     width: 50rem;
     max-width: 50rem;
     max-width: 40rem;
