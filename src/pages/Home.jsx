@@ -8,7 +8,7 @@ import Artists from "../components/Artists";
 import Sample_Packs from "../components/Sample_Packs";
 import About from "../components/About";
 import Top_Banner from "../components/Top_Banner";
-import Banner_Video from "/phoenix_hero.mp4"; // Import the banner video
+import Banner_Video from "/video/phoenix_hero.mp4"; // Import the banner video
 import Header from "../components/Header";
 
 function Home() {
