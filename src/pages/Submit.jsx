@@ -117,7 +117,7 @@ function Submit() {
                   onChange={handleChange}
                   required
                 >
-                  <option value="" selected disabled>
+                  <option value="" defaultValue disabled>
                     Select{" "}
                   </option>
                   <option value="single">Single</option>

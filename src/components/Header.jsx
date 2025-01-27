@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-function Header({ Phoenix }) {
+import Phoenix from "/phoenix_dark_logo.png"; // Import the Phoenix logo
+
+function Header() {
   const [opacity, setOpacity] = useState(0);
 
   useEffect(() => {
