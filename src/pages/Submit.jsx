@@ -1,13 +1,23 @@
 // COPYRIGHT 2025 TANNER MARSH, NAIT WELSH & AIDAN YIP ALL RIGHTS RESERVED
 
+// import react state
 import React, { useState } from "react";
-// import { useEffect } from "react";
+
+// react router
 import { Link } from "react-router-dom";
+
+// import { useEffect } from "react";
+
+//components
 import Arrow_Down from "../components/Arrow_Down";
 import link_to from "../components/Arrow_Down";
-import Top_Banner from "../components/Top_Banner";
-import Banner_Video from "/video/phoenix_hero_sub.mp4"; // Import the banner video
+
+// header components
 import Header from "../components/Header";
+
+// banner video
+import Banner_Video from "/video/phoenix_hero_sub.mp4"; // Import the banner video
+import Top_Banner from "../components/Top_Banner";
 
 function Submit() {
   // useEffect(() => {

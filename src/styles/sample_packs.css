@@ -37,7 +37,7 @@
 
 .sample_pack_image:hover {
   transform: translate(0px, -3rem);
-  box-shadow: 0px 0px 18px 2px #fffeeb;
+  box-shadow: 0px 0px 45px 2px #fffeeba4;
 }
 
 /* button links */

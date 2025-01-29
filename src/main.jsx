@@ -7,13 +7,18 @@ import { BrowserRouter } from 'react-router-dom'
 // css
 import './styles/normalize_v2.css'
 import './styles/index.css'
+
+// pages
 import './styles/home.css'
+import './styles/submit.css'
+
+// components
+import './styles/header.css';
 import './styles/music_icons.css'
 import './styles/artists.css'
 import './styles/sample_packs.css'
 import './styles/about.css'
-import './styles/submit.css'
-import './styles/header.css';
+import './styles/artwork.css'
 
 // components
 import App from './App.jsx'
