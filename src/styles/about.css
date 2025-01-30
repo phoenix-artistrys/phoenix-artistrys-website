@@ -5,7 +5,7 @@
 #about_header {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: solid 0.1rem #fffeeb;
+  border-bottom: solid 0.1rem #2c3954;
   text-shadow: #fffeeb7e 0px 0px 35px;
 }
 
@@ -21,8 +21,29 @@
   border-radius: 3.2rem;
 }
 
+#about_details:hover {
+  cursor: pointer;
+}
+
+p {
+  cursor: text;
+}
+
+#about_details[open] {
+  animation: fadeIn 1s;
+}
+
 @media (max-width: 50rem) {
     #about_sub_header {
       font-size: 1.4rem;
     }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

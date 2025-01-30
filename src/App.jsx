@@ -4,7 +4,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Submit from "./pages/Submit";
-import Header from "./components/Header";
 
 function App() {
   return (
