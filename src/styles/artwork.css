@@ -1,0 +1,12 @@
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.phoenix_logo_large {
+  width: 40%;
+  height: 40%;
+  border: #2c3954 1px solid;
+}

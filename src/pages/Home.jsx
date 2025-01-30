@@ -1,15 +1,26 @@
 // COPYRIGHT 2025 TANNER MARSH, NAIT WELSH & AIDAN YIP ALL RIGHTS RESERVED
 
+// react router
 import { Link } from "react-router-dom";
+
+// components
 import Arrow_Down from "../components/Arrow_Down.jsx";
 import link_to from "../components/Arrow_Down.jsx";
 import Music_Icons from "../components/Music_Icons";
 import Artists from "../components/Artists";
 import Sample_Packs from "../components/Sample_Packs";
+import Artwork from "../components/Artwork.jsx";
 import About from "../components/About";
-import Top_Banner from "../components/Top_Banner";
-import Banner_Video from "/video/phoenix_hero.mp4"; // Import the banner video
+
+// header components
 import Header from "../components/Header";
+
+// banner video
+import Banner_Video from "/video/phoenix_hero.mp4"; // Import the banner video
+import Top_Banner from "../components/Top_Banner";
+
+// artwork
+import phoenix_logo_large from "/images/phoenix_logo_large.png";
 
 function Home() {
   return (
@@ -17,7 +28,7 @@ function Home() {
       <Header navlink="/submit" navlink_text="Submit" />
       <Top_Banner Banner_Video={Banner_Video} />
       <main id="main_content">
-        {/* Banner */}
+        {/* banner */}
         <section className="banner_content">
           <h1 className="hero_title">Phoenix Artistrys</h1>
           <div id="hero_button_div">
@@ -34,7 +45,7 @@ function Home() {
           </div>
           <Arrow_Down to={link_to} />
         </section>
-        {/* Page Body */}
+        {/* page Body */}
         <section className="section" id="phoenix_main">
           <div id="phoenix_main_inner">
             <h2 className="center_text">Featured</h2>
@@ -64,6 +75,9 @@ function Home() {
             {/* about */}
             <About />
           </div>
+
+          {/* artwork */}
+          <Artwork phoenix_logo_large={phoenix_logo_large} />
         </section>
       </main>
     </>

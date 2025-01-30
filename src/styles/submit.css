@@ -63,9 +63,11 @@ a:hover {
 }
 
 fieldset {
+  margin-bottom: 5rem;
   padding: 1rem;
   border-radius: 1rem;
   border: #2c3954 1px solid;
+  background: #2020207e;
 }
 
 .flex_center {
