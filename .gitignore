@@ -1,4 +1,9 @@
+#system files
+
 .DS_Store
-node_modules/
 public/.DS_Store
 public/music_icons/.DS_Store
+
+#node_modules
+
+node_modules
