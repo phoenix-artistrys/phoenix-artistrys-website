@@ -11,6 +11,7 @@ import Artists from "../components/Artists";
 import Sample_Packs from "../components/Sample_Packs";
 import Artwork from "../components/Artwork.jsx";
 import About from "../components/About";
+import Faq_Block from "../components/Faq_Block";
 
 // header components
 import Header from "../components/Header";
@@ -71,6 +72,9 @@ function Home() {
 
             {/* sample packs */}
             <Sample_Packs />
+
+            {/* faq */}
+            <Faq_Block />
 
             {/* about */}
             <About />

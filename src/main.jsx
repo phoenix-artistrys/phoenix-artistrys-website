@@ -20,6 +20,7 @@ import './styles/sample_packs.css'
 import './styles/about.css'
 import './styles/artwork.css'
 import './styles/questions.css'
+import './styles/faq_block.css'
 
 // components
 import App from './App.jsx'
