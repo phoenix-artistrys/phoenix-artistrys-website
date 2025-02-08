@@ -45,14 +45,14 @@ h4 {
   box-shadow: none;
 }
 
-.MuiButtonBase-root {
-  background-color: #282828;
-}
-
+.MuiButtonBase-root,
 .MuiCollapse-root {
+  max-width: 1400px;
   background-color: #282828;
   border-radius: 0.7rem;
   color: #ffffff;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
@@ -72,7 +72,7 @@ h4 {
   color: #ffffff;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   h4 {
     font-size: 1.5rem;
   }
