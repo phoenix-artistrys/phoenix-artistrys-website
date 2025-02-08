@@ -1,0 +1,88 @@
+/* containers */
+
+#main_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.phoenix_main_questions {
+  padding: 5rem 1rem;
+  padding-bottom: 20rem;
+}
+
+/* Typography */
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 0rem;
+}
+
+/* custom */
+
+#questions_header {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+/* links */
+
+.margin_top {
+  margin-top: 10rem;
+}
+
+/* Questions MUI styles */
+[id^="panel"][id$="-header"] {
+  background-color: #282828;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 0.7rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.MuiButtonBase-root {
+  background-color: #282828;
+}
+
+.MuiCollapse-root {
+  background-color: #282828;
+  border-radius: 0.7rem;
+  color: #ffffff;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+  background-color: #282828;
+  border-radius: 0.7rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+[id^="panel"][id$="-content"] {
+  padding: 1rem;
+  padding-top: 0rem;
+}
+
+.MuiSvgIcon-root {
+  color: #ffffff;
+}
+
+@media (min-width: 50em) {
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .phoenix_main_questions {
+    padding: 5rem 20rem;
+    padding-bottom: 20rem;
+  }
+
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+    font-size: 1.1rem;
+  }
+}
