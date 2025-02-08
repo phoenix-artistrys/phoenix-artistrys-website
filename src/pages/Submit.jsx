@@ -19,6 +19,9 @@ import Header from "../components/Header";
 import Banner_Video from "/video/phoenix_hero_sub.mp4"; // Import the banner video
 import Top_Banner from "../components/Top_Banner";
 
+// import DOMPurify
+import DOMPurify from 'dompurify';
+
 function Submit() {
   // useEffect(() => {
   //   const header = document.querySelector("header");
