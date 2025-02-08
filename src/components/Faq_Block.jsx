@@ -9,7 +9,7 @@ function Faq_Block() {
         className="hero_link faq_link"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
-        FAQ
+        Visit
       </Link>
     </div>
   );
