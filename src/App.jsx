@@ -4,6 +4,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Submit from "./pages/Submit";
+import Questions from "./pages/Questions";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/submit" element={<Submit />} />
+        <Route path="/questions" element={<Questions />} />
       </Routes>
     </>
   );

@@ -19,6 +19,7 @@ import Header from "../components/Header";
 import Banner_Video from "/video/phoenix_hero_sub.mp4"; // Import the banner video
 import Top_Banner from "../components/Top_Banner";
 
+
 function Submit() {
   // useEffect(() => {
   //   const header = document.querySelector("header");
@@ -311,8 +312,10 @@ function Submit() {
                     className="blue_link"
                     href="https://sites.google.com/view/submit-to-phoenix/home"
                   >
-                    Terms & Conditions
+                    Terms & Conditions{" "}
                   </a>
+                  or{" "}
+                  <Link to="/questions" className="blue_link">FAQ</Link>
                 </p>
               </article>
 

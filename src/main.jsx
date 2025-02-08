@@ -19,6 +19,7 @@ import './styles/artists.css'
 import './styles/sample_packs.css'
 import './styles/about.css'
 import './styles/artwork.css'
+import './styles/questions.css'
 
 // components
 import App from './App.jsx'
