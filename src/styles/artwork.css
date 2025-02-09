@@ -12,6 +12,7 @@
   grid-template-rows: repeat(1, 1fr);
   gap: 0rem;
   border-radius: 2rem;
+  margin-bottom: 5rem;
   /* box-shadow: inset 0px 0px 18px #878aaa, 0px 0px 18px #878aaab3; */
 }
 
