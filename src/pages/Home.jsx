@@ -32,7 +32,7 @@ function Home() {
     <>
       <Header navlink="/submit" navlink_text="Submit" />
       <Top_Banner Banner_Video={Banner_Video} />
-      <main id="main_content">
+      <main>
         {/* banner */}
         <section className="banner_content">
           <h1 className="hero_title">Phoenix Artistrys</h1>
@@ -85,7 +85,13 @@ function Home() {
           </div>
 
           {/* artwork */}
-          <Artwork phoenix_logo_large={phoenix_logo_large} blue_phoenix={blue_phoenix} audiophobia_clear={audiophobia_clear} skremzy_blue={skremzy_blue} nwlogo={nwlogo} />
+          <Artwork
+            phoenix_logo_large={phoenix_logo_large}
+            blue_phoenix={blue_phoenix}
+            audiophobia_clear={audiophobia_clear}
+            skremzy_blue={skremzy_blue}
+            nwlogo={nwlogo}
+          />
         </section>
       </main>
     </>
