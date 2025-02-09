@@ -43,11 +43,6 @@ main {
   height: auto;
 }
 
-#phoenix_main_inner {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 80rem;
-}
 
 iframe {
   width: 70%;

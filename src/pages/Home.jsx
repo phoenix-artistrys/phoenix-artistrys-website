@@ -22,6 +22,10 @@ import Top_Banner from "../components/Top_Banner";
 
 // artwork
 import phoenix_logo_large from "/images/phoenix_logo_large.png";
+import blue_phoenix from "/images/blue_phoenix.png";
+import audiophobia_clear from "/images/audiophobia_clear.png";
+import skremzy_blue from "/images/skremzy_blue.png";
+import nwlogo from "/images/nwlogo.png";
 
 function Home() {
   return (
@@ -48,7 +52,7 @@ function Home() {
         </section>
         {/* page Body */}
         <section className="section" id="phoenix_main">
-          <div id="phoenix_main_inner">
+          <div id="phoenix_main_inner" className="home_section">
             <h2 className="center_text">Featured</h2>
 
             {/* featured video */}
@@ -81,7 +85,7 @@ function Home() {
           </div>
 
           {/* artwork */}
-          <Artwork phoenix_logo_large={phoenix_logo_large} />
+          <Artwork phoenix_logo_large={phoenix_logo_large} blue_phoenix={blue_phoenix} audiophobia_clear={audiophobia_clear} skremzy_blue={skremzy_blue} nwlogo={nwlogo} />
         </section>
       </main>
     </>
