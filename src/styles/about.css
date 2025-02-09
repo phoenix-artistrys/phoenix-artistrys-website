@@ -3,6 +3,7 @@
 }
 
 #about_header {
+  font-size: 4rem;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: solid 0.1rem #2c3954;
@@ -34,10 +35,15 @@ p {
 }
 
 @media (max-width: 50rem) {
-    #about_sub_header {
-      font-size: 1.4rem;
-    }
+  #about_header {
+    font-size: 2.5rem;
+  }
+  #about_sub_header {
+    font-size: 1.4rem;
+  }
 }
+
+/* keyframes */
 
 @keyframes fadeIn {
   from {
