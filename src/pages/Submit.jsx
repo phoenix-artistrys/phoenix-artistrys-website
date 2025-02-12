@@ -92,7 +92,7 @@ function Submit() {
             {/* artist name */}
             <p>
               <label className="label_base">
-                Artist Name:{" "}
+                Artist Name{" "}
                 <input
                   type="text"
                   name="name"
@@ -107,7 +107,7 @@ function Submit() {
             {/* release name */}
             <p>
               <label className="label_base">
-                Release Name:
+                Release Name
                 <input
                   type="text"
                   name="release_name"
@@ -122,7 +122,7 @@ function Submit() {
             {/* release type */}
             <p>
               <label className="label_base">
-                Release Type:{" "}
+                Release Type{" "}
                 <select
                   name="release_type"
                   className="input_base"
@@ -145,7 +145,7 @@ function Submit() {
             {/* genre */}
             <p>
               <label className="label_base">
-                Genre:{" "}
+                Genre{" "}
                 <select
                   name="genre"
                   className="input_base"
@@ -173,7 +173,7 @@ function Submit() {
             {/* genre if other */}
             <p>
               <label className="label_base">
-                Other:{" "}
+                Other{" "}
                 <input
                   type="text"
                   name="other"
@@ -186,7 +186,7 @@ function Submit() {
             </p>
             <p>
               <label className="label_base">
-                Lyrics:{" "}
+                Lyrics{" "}
                 <select
                   name="has_lyrics"
                   className="input_base"
@@ -206,7 +206,7 @@ function Submit() {
             {/* release demo */}
             <p>
               <label className="label_base">
-                Demo Link:{" "}
+                Demo Link{" "}
                 <input
                   type="text"
                   name="audio_demo_link"
@@ -222,7 +222,7 @@ function Submit() {
             {/* email */}
             <p>
               <label className="label_base">
-                Email:{" "}
+                Email{" "}
                 <input
                   type="email"
                   name="email"
@@ -262,8 +262,8 @@ function Submit() {
               <article className="form_text_container">
                 <p className="form_text">
                   Phoenix Artistrys offers a{" "}
-                  <span className="underline bold">40/40 revenue split</span>{" "}
-                  &#x28;40% artists, 40% label&#x29;, we are open to negotiation
+                  <span className="underline bold">60/40 revenue split</span>{" "}
+                  &#x28;60% artists, 40% label&#x29;, we are open to negotiation
                   on these terms.
                 </p>
               </article>

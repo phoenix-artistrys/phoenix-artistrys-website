@@ -51,8 +51,6 @@ h4 {
   background-color: #282828;
   border-radius: 0.7rem;
   color: #ffffff;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
