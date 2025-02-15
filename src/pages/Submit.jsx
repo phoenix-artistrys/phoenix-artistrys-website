@@ -90,7 +90,7 @@ function Submit() {
             <input type="hidden" name="form-name" value="submit" />
 
             {/* artist name */}
-            <p>
+            <p className="input_container">
               <label className="label_base">
                 Artist Name{" "}
                 <input
@@ -105,7 +105,7 @@ function Submit() {
             </p>
 
             {/* release name */}
-            <p>
+            <p className="input_container">
               <label className="label_base">
                 Release Name
                 <input
@@ -120,7 +120,7 @@ function Submit() {
             </p>
 
             {/* release type */}
-            <p>
+            <p className="input_container">
               <label className="label_base">
                 Release Type{" "}
                 <select
@@ -143,7 +143,7 @@ function Submit() {
             </p>
 
             {/* genre */}
-            <p>
+            <p className="input_container">
               <label className="label_base">
                 Genre{" "}
                 <select
@@ -171,7 +171,7 @@ function Submit() {
             </p>
 
             {/* genre if other */}
-            <p>
+            <p className="input_container">
               <label className="label_base">
                 Other{" "}
                 <input
@@ -184,7 +184,7 @@ function Submit() {
                 ></input>
               </label>
             </p>
-            <p>
+            <p className="input_container">
               <label className="label_base">
                 Lyrics{" "}
                 <select
@@ -204,7 +204,7 @@ function Submit() {
             </p>
 
             {/* release demo */}
-            <p>
+            <p className="input_container">
               <label className="label_base">
                 Demo Link{" "}
                 <input
@@ -220,7 +220,7 @@ function Submit() {
             </p>
 
             {/* email */}
-            <p>
+            <p className="input_container">
               <label className="label_base">
                 Email{" "}
                 <input
