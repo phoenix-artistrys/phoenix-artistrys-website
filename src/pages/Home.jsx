@@ -53,7 +53,7 @@ function Home() {
         {/* page Body */}
         <section className="section" id="phoenix_main">
           <div id="phoenix_main_inner" className="home_section">
-            <h2 className="center_text">Featured</h2>
+            <h2 className="center_text padding_bottom">Featured</h2>
 
             {/* featured video */}
             <iframe
@@ -64,6 +64,8 @@ function Home() {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
+
+            <div className="divider"></div>
 
             {/* platforms */}
             <div id="music_icons_container">

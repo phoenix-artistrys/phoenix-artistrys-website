@@ -1,15 +1,5 @@
 /* sections/containers */
 
-.block_background_dark {
-  background-color: #2828287e;
-  box-shadow: inset 0px 0px 18px #878aaa, 0px 0px 18px #878aaab3;
-  border: #878aaa75 1px solid;
-  border-radius: 3.2rem;
-  backdrop-filter: blur(10px);
-  /* legacy chrome safari support */
-  -webkit-backdrop-filter: blur(10px);
-}
-
 .flex_center {
   display: flex;
   justify-content: center;
