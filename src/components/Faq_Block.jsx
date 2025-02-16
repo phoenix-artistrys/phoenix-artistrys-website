@@ -6,7 +6,7 @@ function Faq_Block() {
       <h2>FAQ</h2>
       <Link
         to="/questions"
-        className="hero_link faq_link"
+        className="hero_link blue_button_link"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         Visit

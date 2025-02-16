@@ -41,8 +41,7 @@ function Sample_Packs() {
       <h2 className="center_text">Sample Packs</h2>
       <a
         href="https://sites.google.com/view/phoenix-sample-packs/free-downloads"
-        className="hero_link"
-        id="sample_packs_link"
+        className="hero_link blue_button_link"
       >
         Download
       </a>
