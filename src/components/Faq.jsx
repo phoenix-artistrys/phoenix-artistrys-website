@@ -68,7 +68,7 @@ function Faq() {
           className="panel-header"
         >
           <h4 component="span">
-            Why the extended response time In July and December?
+            Why the extended response time in July and December?
           </h4>
         </AccordionSummary>
         <AccordionDetails id="panel4-content">

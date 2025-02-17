@@ -106,7 +106,7 @@ fieldset {
   font-size: 1.4rem;
   font-weight: 700;
   color: #fffeeb;
-  margin-left: 0.7rem;
+  margin-left: 0rem;
 }
 
 .input_base {
@@ -162,6 +162,10 @@ input[type="checkbox"]:hover {
 @media (min-width: 50rem) {
   .input_container {
     padding: 0rem;
+  }
+
+  .label_base {
+    margin-left: 1.1rem;
   }
 
   .input_base {
