@@ -3,6 +3,11 @@
 // react router
 import { Link } from "react-router-dom";
 
+// animations
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 // components
 import Arrow_Down from "../components/Arrow_Down.jsx";
 import link_to from "../components/Arrow_Down.jsx";
@@ -63,6 +68,10 @@ function Home() {
               frameBorder="0"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-once="true"
             ></iframe>
 
             <div className="divider"></div>

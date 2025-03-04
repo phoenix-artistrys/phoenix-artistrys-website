@@ -72,17 +72,17 @@ p {
 @keyframes glowingText {
   0% {
     opacity: 0;
-    text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 0 0 12px #fffeeb,
+    text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 
       0 0 16px #ff8c00, 0 0 20px #ff8c00;
   }
   50% {
     opacity: 1;
-    text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 0 0 12px #fffeeb,
+    text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 
       0 0 16px #ff8c00, 0 0 20px #ff8c00, 0 0 24px #ff8c00, 0 0 28px #ff8c00;
   }
   100% {
     opacity: 1;
-    text-shadow: 0 0 0px #fffeeb, 0 0 0px #fffeeb, 0 0 0px #fffeeb,
+    text-shadow: 0 0 0px #fffeeb, 0 0 0px #fffeeb, 
       0 0 0px #ff8c00, 0 0 0px #ff8c00, 0 0 0px #ff8c00, 0 0 0px #ff8c00,
       0 0 0px #ff8c00;
   }

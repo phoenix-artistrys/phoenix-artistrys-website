@@ -1,3 +1,8 @@
+// animations
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 function Sample_Packs() {
   const handleContextMenu = (event) => {
     event.preventDefault();
@@ -7,6 +12,9 @@ function Sample_Packs() {
     <div
       className="block_background_white block_background_dark block_padding"
       id="sample_packs"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
     >
       <div className="flex_center sample_pack_container">
         <img

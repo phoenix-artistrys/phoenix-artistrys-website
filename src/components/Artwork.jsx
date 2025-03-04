@@ -1,6 +1,23 @@
-function Artwork({ phoenix_logo_large, blue_phoenix, audiophobia_clear, skremzy_blue, nwlogo }) {
+// animations
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
+function Artwork({
+  phoenix_logo_large,
+  blue_phoenix,
+  audiophobia_clear,
+  skremzy_blue,
+  nwlogo,
+}) {
   return (
-    <div className="grid_container">
+    <div
+      className="grid_container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-once="true"
+    >
       <img
         src={blue_phoenix}
         alt="Volume 5 Artwork"
@@ -8,7 +25,7 @@ function Artwork({ phoenix_logo_large, blue_phoenix, audiophobia_clear, skremzy_
         id="blue_phoenix"
         onContextMenu={(e) => e.preventDefault()}
       />
-       <img
+      <img
         src={phoenix_logo_large}
         alt="Phoenix Artistrys Logo"
         className="artwork_large"
