@@ -70,7 +70,7 @@ fieldset {
   border: #2c3954 1px solid;
   border-top: #2c3954 2px solid;
   background: #2020207e;
-  scroll-snap-align: top;
+  scroll-snap-align: center;
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);
