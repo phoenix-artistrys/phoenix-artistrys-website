@@ -1,1 +1,18 @@
+.faq_img {
+    width: 20rem;
+    padding: 3rem;
+    height: auto;
+    object-fit: cover;
+    pointer-events: none;
+}
 
+.block_faq {
+    height: 40rem;
+  }
+  
+  @media (min-width: 50em) {
+    .block_faq {
+      background-position: center;
+      height: 45rem;
+    }
+  }

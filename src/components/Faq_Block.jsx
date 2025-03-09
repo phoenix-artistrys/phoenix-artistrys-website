@@ -9,12 +9,18 @@ AOS.init();
 function Faq_Block() {
   return (
     <div
-      className="block_background_white block_background_dark block_padding"
+      className="block_background_white block_background_dark block_padding block_faq"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-anchor-placement="top-bottom"
-      data-aos-once="true"
+      data-aos-once="false"
     >
+      <img
+        src="/images/faq.png"
+        alt="FAQ img"
+        className="faq_img"
+        onContextMenu={(e) => e.preventDefault()}
+      />
       <h2>FAQ</h2>
       <Link
         to="/questions"

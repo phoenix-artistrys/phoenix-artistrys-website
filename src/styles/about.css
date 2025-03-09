@@ -6,7 +6,7 @@
   font-size: 4rem;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: solid 0.1rem #2c3954;
+  border-bottom: solid 0.1rem #565656;
   text-shadow: #fffeeb7e 0px 0px 35px;
 }
 
@@ -73,17 +73,17 @@ p {
   0% {
     opacity: 0;
     text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 
-      0 0 16px #ff8c00, 0 0 20px #ff8c00;
+      0 0 7px #008cff, 0 0 10px #008cff;
   }
   50% {
     opacity: 1;
     text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 
-      0 0 16px #ff8c00, 0 0 20px #ff8c00, 0 0 24px #ff8c00, 0 0 28px #ff8c00;
+      0 0 7px #008cff, 0 0 10px #008cff, 0 0 14px #008cff, 0 0 18px #008cff;
   }
   100% {
     opacity: 1;
     text-shadow: 0 0 0px #fffeeb, 0 0 0px #fffeeb, 
-      0 0 0px #ff8c00, 0 0 0px #ff8c00, 0 0 0px #ff8c00, 0 0 0px #ff8c00,
-      0 0 0px #ff8c00;
+      0 0 0px #008cff, 0 0 0px #008cff, 0 0 0px #008cff, 0 0 0px #008cff,
+      0 0 0px #008cff;
   }
 }

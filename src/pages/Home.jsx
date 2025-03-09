@@ -71,7 +71,7 @@ function Home() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-anchor-placement="top-bottom"
-              data-aos-once="true"
+              data-aos-once="false"
             ></iframe>
 
             <div className="divider"></div>
