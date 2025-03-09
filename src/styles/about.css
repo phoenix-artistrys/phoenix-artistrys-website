@@ -17,6 +17,10 @@
   text-shadow: #fffeeb7e 0px 0px 35px;
 }
 
+#about_sub_header:hover {
+  text-decoration: underline;
+}
+
 /* #about_sub_header:hover {
   text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 0 0 16px #ff8c00,
     0 0 20px #ff8c00, 0 0 24px #ff8c00, 0 0 28px #ff8c00;
