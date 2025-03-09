@@ -16,7 +16,7 @@ function Artwork({
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-anchor-placement="top-bottom"
-      data-aos-once="true"
+      data-aos-once="false"
     >
       <img
         src={blue_phoenix}

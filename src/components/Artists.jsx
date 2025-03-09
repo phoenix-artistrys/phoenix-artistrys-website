@@ -7,10 +7,11 @@ function Artists() {
   return (
     <div
       className="block_background_white block_background_dark"
+      id="artists"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-anchor-placement="top-bottom"
-      data-aos-once="true"
+      data-aos-once="false"
     >
       <h2 className="">Artists</h2>
       <a

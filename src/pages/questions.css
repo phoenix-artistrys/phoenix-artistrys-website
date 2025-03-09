@@ -51,6 +51,12 @@ h4 {
   background-color: #282828;
   border-radius: 0.7rem;
   color: #ffffff;
+  outline:none 
+}
+
+.MuiButtonBase-root:focus,
+.MuiCollapse-root:focus {
+  outline:none;
 }
 
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {

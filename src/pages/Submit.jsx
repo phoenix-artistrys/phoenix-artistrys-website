@@ -19,7 +19,6 @@ import Header from "../components/Header";
 import Banner_Video from "/video/phoenix_hero_sub.mp4"; // Import the banner video
 import Top_Banner from "../components/Top_Banner";
 
-
 function Submit() {
   // useEffect(() => {
   //   const header = document.querySelector("header");
@@ -77,6 +76,12 @@ function Submit() {
 
         {/* Page Body */}
         <section className="section flex_center" id="phoenix_main">
+          <img
+            src="/images/envelope_no_shadow.png"
+            alt="Envelope image"
+            className="mail_img"
+            onContextMenu={(e) => e.preventDefault()}
+          />
           <h1 id="submit_header">Submit Your Music</h1>
           {/* Submission form */}
           <form
@@ -315,7 +320,9 @@ function Submit() {
                     Terms & Conditions{" "}
                   </a>
                   or{" "}
-                  <Link to="/questions" className="blue_link">FAQ</Link>
+                  <Link to="/questions" className="blue_link">
+                    FAQ
+                  </Link>
                 </p>
               </article>
 

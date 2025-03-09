@@ -10,7 +10,7 @@ function Music_Icons() {
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-anchor-placement="top-bottom"
-      data-aos-once="true"
+      data-aos-once="false"
     >
       <a href="https://www.youtube.com/@Phoenix_Artistrys">
         <img

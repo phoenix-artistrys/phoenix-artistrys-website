@@ -13,8 +13,14 @@ function Faq_Block() {
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-anchor-placement="top-bottom"
-      data-aos-once="true"
+      data-aos-once="false"
     >
+      <img
+        src="/images/faq.png"
+        alt="FAQ img"
+        className="faq_img"
+        onContextMenu={(e) => e.preventDefault()}
+      />
       <h2>FAQ</h2>
       <Link
         to="/questions"

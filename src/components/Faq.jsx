@@ -15,7 +15,7 @@ function Faq() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <h4 component="span">What genre of music are you looking for?</h4>
+          <h4 component="span">What genres can I submit?</h4>
         </AccordionSummary>
         <AccordionDetails id="panel1-content">
           We are looking for music that is Electronic/Cinematic based. Pop is

@@ -14,7 +14,7 @@ function Sample_Packs() {
       id="sample_packs"
       data-aos="fade-up"
       data-aos-duration="1000"
-      data-aos-once="true"
+      data-aos-once="false"
     >
       <div className="flex_center sample_pack_container">
         <img
