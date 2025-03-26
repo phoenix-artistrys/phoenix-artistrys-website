@@ -35,7 +35,7 @@ import nwlogo from "/images/nwlogo.png";
 function Home() {
   return (
     <>
-      <Header navlink="/submit" navlink_text="Submit" />
+      <Header navlink="/submit#submit_banner" navlink_text="Submit" />
       <Top_Banner Banner_Video={Banner_Video} />
       <main>
         {/* banner */}

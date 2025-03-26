@@ -24,7 +24,7 @@ function Questions() {
       <Top_Banner Banner_Video={Banner_Video} />
       <main>
         {/* Banner */}
-        <section className="banner_content lighter_filter">
+        <section className="banner_content lighter_filter" id="faq_banner">
           <h1 className="hero_title">FAQ</h1>
           <div id="hero_button_div">
             <Link
