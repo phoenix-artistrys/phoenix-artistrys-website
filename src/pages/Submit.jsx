@@ -60,7 +60,7 @@ function Submit() {
       <Top_Banner Banner_Video={Banner_Video} />
       <main>
         {/* Banner */}
-        <section className="banner_content lighter_filter">
+        <section className="banner_content lighter_filter" id="submit_banner">
           <h1 className="hero_title">Submission</h1>
           <div id="hero_button_div">
             <Link
@@ -320,7 +320,7 @@ function Submit() {
                     Terms & Conditions{" "}
                   </a>
                   or{" "}
-                  <Link to="/questions" className="blue_link">
+                  <Link to="/questions#faq_banner" className="blue_link">
                     FAQ
                   </Link>
                 </p>

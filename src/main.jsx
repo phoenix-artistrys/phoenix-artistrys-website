@@ -1,34 +1,38 @@
 // COPYRIGHT 2025 TANNER MARSH, NAIT WELSH & AIDAN YIP ALL RIGHTS RESERVED
 
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
 // base css
-import './styles/normalize_v2.css'
-import './styles/index.css'
+import "./styles/normalize_v2.css";
+import "./styles/index.css";
 
 // pages css
-import './pages/home.css'
-import './pages/submit.css'
-import './pages/questions.css'
+import "./pages/home.css";
+import "./pages/submit.css";
+import "./pages/questions.css";
 
 // components css
-import './styles/header.css';
-import './styles/music_icons.css'
-import './styles/artists.css'
-import './styles/sample_packs.css'
-import './styles/about.css'
-import './styles/artwork.css'
-import './styles/faq_block.css'
+import "./styles/header.css";
+import "./styles/music_icons.css";
+import "./styles/artists.css";
+import "./styles/sample_packs.css";
+import "./styles/about.css";
+import "./styles/artwork.css";
+import "./styles/faq_block.css";
 
 // components
-import App from './App.jsx'
+import App from "./App.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// utility function to scroll to top of page
+import Scroll_To_Section from "./components/Scroll_To_Section";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
+      <Scroll_To_Section />
       <App />
     </BrowserRouter>
   </React.StrictMode>
-)
+);
