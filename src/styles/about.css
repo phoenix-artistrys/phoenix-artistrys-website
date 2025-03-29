@@ -18,13 +18,9 @@
 }
 
 #about_sub_header:hover {
-  text-decoration: underline;
+  animation: gentleShake 0.5s ease-in-out;
+  transition: all 0.3s ease;
 }
-
-/* #about_sub_header:hover {
-  text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 0 0 16px #ff8c00,
-    0 0 20px #ff8c00, 0 0 24px #ff8c00, 0 0 28px #ff8c00;
-} */
 
 #about_details {
   margin-bottom: 1.5rem;
@@ -89,5 +85,23 @@ p {
     text-shadow: 0 0 0px #fffeeb, 0 0 0px #fffeeb, 
       0 0 0px #008cff, 0 0 0px #008cff, 0 0 0px #008cff, 0 0 0px #008cff,
       0 0 0px #008cff;
+  }
+}
+
+@keyframes gentleShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

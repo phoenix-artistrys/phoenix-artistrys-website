@@ -139,8 +139,13 @@ fieldset {
 
 .input_base:hover {
   outline: none;
+  transform: scale(1.02);
   box-shadow: inset 0px 0px 8px #fc980f, 0px 0px 18px #fc980f;
   border: #ffba5a 2px solid;
+}
+
+.select_base {
+  cursor: pointer;
 }
 
 .music_submit {
@@ -150,6 +155,10 @@ fieldset {
   justify-content: center;
   margin-top: 2rem;
   margin-left: 0.9rem;
+}
+
+.demo_input {
+  font-size: 1rem;
 }
 
 input[type="checkbox"] {

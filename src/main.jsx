@@ -32,6 +32,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Scroll_To_Section />
+      <a href="#maincontent" id="skip_to_main" tabIndex={0}>Skip to main content</a>
       <App />
     </BrowserRouter>
   </React.StrictMode>

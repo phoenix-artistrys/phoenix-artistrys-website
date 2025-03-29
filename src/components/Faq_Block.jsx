@@ -21,7 +21,7 @@ function Faq_Block() {
         className="faq_img"
         onContextMenu={(e) => e.preventDefault()}
       />
-      <h2>FAQ</h2>
+      <h2 tabIndex={0}>FAQ</h2>
       <Link
         to="/questions#faq_banner"
         className="hero_link blue_button_link"

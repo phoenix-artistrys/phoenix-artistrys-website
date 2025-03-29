@@ -265,6 +265,8 @@ button:hover,
   color: #000000;
   background: #fffeeb;
   box-shadow: 0px 0px 2rem 0.4rem #7cb3ff;
+  transform: scale(1.10);
+  transition: all 0.3s ease;
 }
 
 button:focus,
@@ -317,6 +319,18 @@ button:focus-visible,
   width: 100%;
 }
 
+/* button links */
+
+.blue_button_link {
+  padding: 0.6em 0.7em;
+  border: solid 2px #77d0ff;
+}
+
+.blue_button_link:hover {
+  transform: scale(1.10);
+  transition: all 0.3s ease;
+}
+
 /* media */
 
 .video_banner {
@@ -327,6 +341,23 @@ button:focus-visible,
   height: 100vh;
   object-fit: cover;
   background-color: #000000;
+}
+
+/* accessibility */
+
+#skip_to_main {
+  z-index: 1000;
+  top: 1rem;
+  left: 1rem;
+  position: absolute;
+  padding: 1rem;
+  background-color: #1b1b1b;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#skip_to_main:focus {
+  opacity: 1;
 }
 
 /* desktop */
