@@ -68,7 +68,7 @@ a:hover {
   margin-bottom: 1rem;
   padding: 1rem;
   /* border-radius: 1rem; */
-  border-top: #2c3954 1px solid;
+  border-top: #2c3954c4 1px solid;
 }
 
 fieldset {
@@ -76,8 +76,8 @@ fieldset {
   margin-bottom: 5rem;
   padding: 1rem;
   border-radius: 1rem;
-  border: #2c3954 1px solid;
-  border-top: #2c3954 2px solid;
+  border: #2c395478 1px solid;
+  border-top: #2c395478 2px solid;
   background: #2020207e;
   scroll-snap-align: center;
   backdrop-filter: blur(10px);
