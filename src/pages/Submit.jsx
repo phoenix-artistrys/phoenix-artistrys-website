@@ -58,10 +58,10 @@ function Submit() {
     <>
       <Header navlink="/" navlink_text="Home" />
       <Top_Banner Banner_Video={Banner_Video} />
-      <main>
+      <main id="maincontent">
         {/* Banner */}
         <section className="banner_content lighter_filter" id="submit_banner">
-          <h1 className="hero_title">Submission</h1>
+          <h1 className="hero_title" tabIndex={0}>Submission</h1>
           <div id="hero_button_div">
             <Link
               to="/"
@@ -82,7 +82,7 @@ function Submit() {
             className="mail_img"
             onContextMenu={(e) => e.preventDefault()}
           />
-          <h1 id="submit_header">Submit Your Music</h1>
+          <h2 id="submit_header" tabIndex={0}>Submit Your Music</h2>
           {/* Submission form */}
           <form
             name="submit"
@@ -96,7 +96,7 @@ function Submit() {
 
             {/* artist name */}
             <p className="input_container">
-              <label className="label_base">
+              <label className="label_base" tabIndex={0}>
                 Artist Name{" "}
                 <input
                   type="text"
@@ -111,7 +111,7 @@ function Submit() {
 
             {/* release name */}
             <p className="input_container">
-              <label className="label_base">
+              <label className="label_base" tabIndex={0}>
                 Release Name
                 <input
                   type="text"
@@ -126,11 +126,11 @@ function Submit() {
 
             {/* release type */}
             <p className="input_container">
-              <label className="label_base">
+              <label className="label_base" tabIndex={0}>
                 Release Type{" "}
                 <select
                   name="release_type"
-                  className="input_base"
+                  className="input_base select_base"
                   value={formData.release_type}
                   onChange={handleChange}
                   required
@@ -149,11 +149,11 @@ function Submit() {
 
             {/* genre */}
             <p className="input_container">
-              <label className="label_base">
+              <label className="label_base" tabIndex={0}>
                 Genre{" "}
                 <select
                   name="genre"
-                  className="input_base"
+                  className="input_base select_base"
                   value={formData.genre}
                   onChange={handleChange}
                   required
@@ -177,7 +177,7 @@ function Submit() {
 
             {/* genre if other */}
             <p className="input_container">
-              <label className="label_base">
+              <label className="label_base" tabIndex={0}>
                 Other{" "}
                 <input
                   type="text"
@@ -190,11 +190,11 @@ function Submit() {
               </label>
             </p>
             <p className="input_container">
-              <label className="label_base">
+              <label className="label_base" tabIndex={0}>
                 Lyrics{" "}
                 <select
                   name="has_lyrics"
-                  className="input_base"
+                  className="input_base select_base"
                   value={formData.has_lyrics}
                   onChange={handleChange}
                   required
@@ -210,13 +210,13 @@ function Submit() {
 
             {/* release demo */}
             <p className="input_container">
-              <label className="label_base">
+              <label className="label_base" tabIndex={0}>
                 Demo Link{" "}
                 <input
                   type="text"
                   name="audio_demo_link"
-                  className="input_base"
-                  placeholder="SoundCloud & WeTransfer ONLY"
+                  className="input_base demo_input"
+                  placeholder="SoundCloud WeTransfer G Drive"
                   value={formData.audio_demo_link}
                   onChange={handleChange}
                   required
@@ -226,7 +226,7 @@ function Submit() {
 
             {/* email */}
             <p className="input_container">
-              <label className="label_base">
+              <label className="label_base" tabIndex={0}>
                 Email{" "}
                 <input
                   type="email"
@@ -243,7 +243,7 @@ function Submit() {
             {/* lyric terms and conditions - hidden before click */}
             <fieldset>
               <article className="form_text_container no_border">
-                <p className="form_text left_alight">
+                <p className="form_text left_alight" tabIndex={0}>
                   Phoenix Artistrys{" "}
                   <span className="underline bold red">
                     does not accept tracks with explicit lyrics.
@@ -251,7 +251,7 @@ function Submit() {
                 </p>
               </article>
               <p>
-                <label className="form_text glow">
+                <label className="form_text glow" tabIndex={0}>
                   <input
                     type="checkbox"
                     name="lyrics_checkbox"
@@ -265,7 +265,7 @@ function Submit() {
 
               {/* revenue info */}
               <article className="form_text_container">
-                <p className="form_text">
+                <p className="form_text" tabIndex={0}>
                   Phoenix Artistrys offers a{" "}
                   <span className="underline bold">60/40 revenue split</span>{" "}
                   &#x28;60% artists, 40% label&#x29;, we are open to negotiation
@@ -275,7 +275,7 @@ function Submit() {
 
               {/* terms and conditions checkbox */}
               <p>
-                <label className="form_text glow">
+                <label className="form_text glow" tabIndex={0}>
                   <input
                     type="checkbox"
                     name="revenue_checkbox"
@@ -289,7 +289,7 @@ function Submit() {
 
               {/* agreements */}
               <article className="form_text_container">
-                <p className="form_text">
+                <p className="form_text" tabIndex={0}>
                   Phoenix Artistrys{" "}
                   <span className="underline">
                     will distribute accepted tracks to major platforms.
@@ -299,7 +299,7 @@ function Submit() {
 
               {/* terms and conditions checkbox */}
               <p>
-                <label className="form_text glow">
+                <label className="form_text glow" tabIndex={0}>
                   <input
                     type="checkbox"
                     name="terms_checkbox"
@@ -311,7 +311,7 @@ function Submit() {
                 </label>
               </p>
               <article className="form_text_container">
-                <p className="form_text">
+                <p className="form_text" tabIndex={0}>
                   Further details can be found in our{" "}
                   <a
                     className="blue_link"

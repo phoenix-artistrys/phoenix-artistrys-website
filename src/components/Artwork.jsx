@@ -24,12 +24,14 @@ function Artwork({
         className="artwork_large"
         id="blue_phoenix"
         onContextMenu={(e) => e.preventDefault()}
+        tabIndex={0}
       />
       <img
         src={phoenix_logo_large}
         alt="Phoenix Artistrys Logo"
         className="artwork_large"
         onContextMenu={(e) => e.preventDefault()}
+        tabIndex={0}
       />
       <img
         src={audiophobia_clear}
@@ -37,6 +39,7 @@ function Artwork({
         className="artwork_large"
         id="audiophobia_clear"
         onContextMenu={(e) => e.preventDefault()}
+        tabIndex={0}
       />
       <img
         src={skremzy_blue}
@@ -44,6 +47,7 @@ function Artwork({
         className="artwork_large"
         id="skremzy_blue"
         onContextMenu={(e) => e.preventDefault()}
+        tabIndex={0}
       />
       <img
         src={nwlogo}
@@ -51,6 +55,7 @@ function Artwork({
         className="artwork_large"
         id="nwlogo"
         onContextMenu={(e) => e.preventDefault()}
+        tabIndex={0}
       />
     </div>
   );

@@ -46,7 +46,7 @@ function Sample_Packs() {
           onContextMenu={handleContextMenu}
         />
       </div>
-      <h2 className="center_text">Sample Packs</h2>
+      <h2 className="center_text" tabIndex={0}>Sample Packs</h2>
       <a
         href="https://sites.google.com/view/phoenix-sample-packs/free-downloads"
         className="hero_link blue_button_link"

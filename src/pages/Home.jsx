@@ -4,8 +4,8 @@
 import { Link } from "react-router-dom";
 
 // animations
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 AOS.init();
 
 // components
@@ -37,10 +37,12 @@ function Home() {
     <>
       <Header navlink="/submit#submit_banner" navlink_text="Submit" />
       <Top_Banner Banner_Video={Banner_Video} />
-      <main>
+      <main id="maincontent">
         {/* banner */}
         <section className="banner_content">
-          <h1 className="hero_title">Phoenix Artistrys</h1>
+          <h1 className="hero_title" tabIndex={0}>
+            Phoenix Artistrys
+          </h1>
           <div id="hero_button_div">
             <Link
               to="/submit"
@@ -58,7 +60,9 @@ function Home() {
         {/* page Body */}
         <section className="section" id="phoenix_main">
           <div id="phoenix_main_inner" className="home_section">
-            <h2 className="center_text padding_bottom">Featured</h2>
+            <h2 className="center_text padding_bottom" tabIndex={0}>
+              Featured
+            </h2>
 
             {/* featured video */}
             <iframe
@@ -77,10 +81,8 @@ function Home() {
             <div className="divider"></div>
 
             {/* platforms */}
-            <div id="music_icons_container">
-              <h2 className="center_text">Platforms</h2>
-              <Music_Icons />
-            </div>
+
+            <Music_Icons />
 
             {/* artists */}
             <Artists />

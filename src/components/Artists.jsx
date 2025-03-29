@@ -13,7 +13,7 @@ function Artists() {
       data-aos-anchor-placement="top-bottom"
       data-aos-once="false"
     >
-      <h2 className="">Artists</h2>
+      <h2 tabIndex={0}>Artists</h2>
       <a
         href="https://sites.google.com/view/phoenixartistrys-artists/artists"
         className="hero_link blue_button_link"
