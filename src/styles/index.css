@@ -265,8 +265,11 @@ button:hover,
   color: #000000;
   background: #fffeeb;
   box-shadow: 0px 0px 2rem 0.4rem #7cb3ff;
-  transform: scale(1.10);
   transition: all 0.3s ease;
+}
+
+.hero_link:hover {
+  transform: scale(1.10);
 }
 
 button:focus,
