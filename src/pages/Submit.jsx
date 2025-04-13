@@ -182,7 +182,7 @@ function Submit() {
                 <input
                   type="text"
                   name="other"
-                  placeholder="e.g. Vaperwave"
+                  placeholder="e.g. Vaporwave"
                   className="input_base other_description"
                   value={formData.other}
                   onChange={handleChange}
