@@ -97,10 +97,11 @@ function Submit() {
             {/* artist name */}
             <p className="input_container">
               <label className="label_base" tabIndex={0}>
-                Artist Name{" "}
+                Artist Name&#x28;s&#x29;{" "}
                 <input
                   type="text"
                   name="name"
+                  placeholder=""
                   className="input_base"
                   value={formData.name}
                   onChange={handleChange}

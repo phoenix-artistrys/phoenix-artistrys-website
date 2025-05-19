@@ -35,7 +35,6 @@
   padding: 4rem;
 }
 
-#nwlogo,
 #audiophobia_clear {
   padding: 3rem;
 }
@@ -45,6 +44,7 @@
 }
 
 #nwlogo {
+  padding: 1rem;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
