@@ -81,11 +81,12 @@ iframe {
   justify-content: center;
   align-items: center;
   margin-bottom: 10rem;
-   background-color: #1818184d;
-  border: 0.2px solid #67676790;
-  // box-shadow: 0 0 25px 0 #51515171;
+  background-color: #2828287e;
+  box-shadow: inset 0px 0px 10px #878aaa;
+  border: #878aaa75 1px solid;
+  border-radius: 3.2rem;
   backdrop-filter: blur(10px);
-  // legacy webkit browser blur
+  /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);
   border-radius: 3.2rem;
   
