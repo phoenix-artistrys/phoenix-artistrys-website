@@ -13,7 +13,13 @@
   gap: 0rem;
   border-radius: 2rem;
   margin-bottom: 5rem;
-  /* box-shadow: inset 0px 0px 18px #878aaa, 0px 0px 18px #878aaab3; */
+  background-color: #2828287e;
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
+    inset -0.1px -0.1px 1px #ffffffc5;
+  border: #878aaa75 1px solid;
+  backdrop-filter: blur(10px);
+  /* legacy chrome safari support */
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .artwork_large {

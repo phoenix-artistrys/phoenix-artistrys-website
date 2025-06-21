@@ -40,20 +40,22 @@ function Home() {
       <main id="maincontent">
         {/* banner */}
         <section className="banner_content">
-          <h1 className="hero_title" tabIndex={0}>
-            Phoenix Artistrys
-          </h1>
-          <div id="hero_button_div">
-            <Link
-              to="/submit"
-              className="hero_link call_to_action"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              Submit
-            </Link>
-            <a href="#music_icons_container" className="hero_link">
-              Listen
-            </a>
+          <div className="top_sec_container">
+            <h1 className="hero_title" tabIndex={0}>
+              Phoenix Artistrys
+            </h1>
+            <div id="hero_button_div">
+              <Link
+                to="/submit"
+                className="hero_link call_to_action"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Submit
+              </Link>
+              <a href="#music_icons_container" className="hero_link">
+                Listen
+              </a>
+            </div>
           </div>
           <Arrow_Down to={link_to} />
         </section>

@@ -24,7 +24,6 @@
 
 html {
   scroll-behavior: smooth;
- 
 }
 
 body {
@@ -53,7 +52,9 @@ iframe {
   border-radius: 1.5rem;
   margin-bottom: 5rem;
   display: block;
-  box-shadow: 0px 0px 18px #878aaab3;
+  box-shadow: inset 0px 0px 5px #878aaa7d, -1px -1px 1px #ffffffec,
+    0.1px 0.1px 1px #ffffffc5;
+  border: #878aaa75 1px solid;
 }
 
 /* sections/containers */
@@ -82,14 +83,13 @@ iframe {
   align-items: center;
   margin-bottom: 10rem;
   background-color: #2828287e;
-  box-shadow: inset 0px 0px 10px #878aaa;
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffa4;
   border: #878aaa75 1px solid;
   border-radius: 3.2rem;
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);
   border-radius: 3.2rem;
-  
 }
 
 .opacity_70 {
@@ -177,7 +177,7 @@ summary {
 .hero_title {
   position: relative;
   z-index: 4;
-  padding: 1rem;
+  padding: 0rem;
   font-size: 3rem;
   text-align: center;
   line-height: 1.1;
@@ -231,15 +231,19 @@ span.arrow_down {
   z-index: 5;
   position: relative;
   margin-top: 7rem;
-  padding: 1rem;
-  font-size: 2rem;
+  padding: 0.8rem;
+  font-size: 1.8rem;
   color: #ffffff;
   border-bottom: solid 0.2rem #ffffff00;
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
+    inset -0.1px -0.1px 1px #ffffffc5;
+  border: #878aaa75 1px solid;
+  border-radius: 3.2rem;
   transition: 0.3 all;
 }
 
 span.arrow_down:hover {
-  border-bottom: solid 0.2rem #ffffff;
+  border: solid 2px #ffffff;
   animation: transformUpDown 0.7s ease-in-out infinite;
 }
 
@@ -255,8 +259,13 @@ button,
   font-weight: bold;
   font-family: inherit;
   color: #fffeeb;
-  background: #101010;
-  border: none;
+  background: #101010a1;
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
+    inset -0.1px -0.1px 1px #ffffffc5;
+  border: #878aaa75 1px solid;
+  backdrop-filter: blur(10px);
+  /* legacy chrome safari support */
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 2.2rem;
   cursor: pointer;
   transition: 0.4s linear;
@@ -266,12 +275,13 @@ button:hover,
 .hero_link:hover {
   color: #000000;
   background: #fffeeb;
+  border: solid 1px #bdbdae;
   box-shadow: 0px 0px 2rem 0.4rem #7cb3ff;
   transition: all 0.3s ease;
 }
 
 .hero_link:hover {
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
 
 button:focus,
@@ -295,6 +305,8 @@ button:focus-visible,
   color: #000000;
   background: #fc980f;
   background: linear-gradient(250deg, #fc980f 0%, #ebe62c 100%);
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
+    inset -0.1px -0.1px 1px #ffffffc5;
   border: none;
   border-radius: 2.2rem;
   cursor: pointer;
@@ -328,11 +340,13 @@ button:focus-visible,
 
 .blue_button_link {
   padding: 0.6em 0.7em;
-  border: solid 2px #77d0ff;
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
+    inset -0.1px -0.1px 1px #ffffffc5;
+  border: #77d0ff 1px solid;
 }
 
 .blue_button_link:hover {
-  transform: scale(1.10);
+  transform: scale(1.1);
   transition: all 0.3s ease;
 }
 
@@ -377,7 +391,7 @@ button:focus-visible,
   }
 
   .hero_title {
-    padding: 2rem;
+    padding: 0rem;
     font-size: 4rem;
   }
 

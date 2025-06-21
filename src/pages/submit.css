@@ -115,10 +115,12 @@ fieldset {
 }
 
 .label_base {
+  display: inline-block;
   font-size: 1.4rem;
   font-weight: 700;
   color: #fffeeb;
   margin-left: 0rem;
+  margin-top: 2rem;
 }
 
 .input_base {
@@ -126,7 +128,7 @@ fieldset {
   height: 4rem;
   display: block;
   border-radius: 1rem;
-  background-color: #2828287e;
+  background-color: #2828285d;
   color: #fffeeb;
   font-size: 1.3rem;
   font-weight: 700;
@@ -134,17 +136,13 @@ fieldset {
   margin-top: 1rem;
   margin-bottom: 3rem;
   padding: 1rem 1.5rem;
-
-  box-shadow: inset 0px 0px 10px #878aaa;
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
+    inset -0.1px -0.1px 1px #ffffffc5;
   border: #878aaa75 1px solid;
- 
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);
-
   backdrop-filter: blur(10px);
-
-  -webkit-backdrop-filter: blur(10px);
   appearance: none;
   transition: all 0.3s ease;
 }
@@ -152,8 +150,8 @@ fieldset {
 .input_base:hover {
   outline: none;
   transform: scale(1.02);
-  box-shadow: inset 0px 0px 8px #fc980f, 0px 0px 18px #fc980f;
-  border: #ffba5a 2px solid;
+  box-shadow: inset 0px 0px 8px #fff5e8, 0px 0px 18px #fff5e8;
+  border: #eef0ffba 1px solid;
 }
 
 .select_base {
