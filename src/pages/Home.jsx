@@ -24,6 +24,7 @@ import Header from "../components/Header";
 // banner video
 import Banner_Video from "/video/phoenix_hero.mp4"; // Import the banner video
 import Top_Banner from "../components/Top_Banner";
+import Video_Poster from "/images/video_placeholder.png"; // Import the video poster
 
 // artwork
 import phoenix_logo_large from "/images/phoenix_logo_large.png";
@@ -36,7 +37,7 @@ function Home() {
   return (
     <>
       <Header navlink="/submit#submit_banner" navlink_text="Submit" />
-      <Top_Banner Banner_Video={Banner_Video} />
+      <Top_Banner Banner_Video={Banner_Video} Video_Poster={Video_Poster} />
       <main id="maincontent">
         {/* banner */}
         <section className="banner_content">

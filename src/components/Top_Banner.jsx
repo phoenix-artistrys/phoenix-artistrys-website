@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
-function Top_Banner({ Banner_Video }) {
+function Top_Banner({ Banner_Video, Video_Poster }) {
   // Pause the banner video when scrolling down, play when at top
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +20,7 @@ function Top_Banner({ Banner_Video }) {
   return (
     <video
       src={Banner_Video}
+      poster={Video_Poster}
       autoPlay
       webkit-playsinline
       playsInline
