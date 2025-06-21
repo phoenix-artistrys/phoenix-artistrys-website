@@ -115,7 +115,7 @@ fieldset {
 }
 
 .label_base {
-  display: inline-block;
+  display: block;
   font-size: 1.4rem;
   font-weight: 700;
   color: #fffeeb;
@@ -142,7 +142,6 @@ fieldset {
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   appearance: none;
   transition: all 0.3s ease;
 }
@@ -193,7 +192,7 @@ input[type="checkbox"]:hover {
   }
 
   .label_base {
-    margin-left: 1.1rem;
+    margin-left: 2rem;
   }
 
   .input_base {

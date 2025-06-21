@@ -67,8 +67,10 @@ iframe {
   width: 100%;
   height: auto;
   padding: 1rem;
+  padding-top: 5rem;
   text-align: left;
   background: #101010e9;
+  box-shadow: 0px 0px 70px 20px #101010;
 }
 
 /* custom */
@@ -390,6 +392,7 @@ button:focus-visible,
 
   .section {
     padding: 5rem;
+    padding-top: 10rem;
   }
 
   .hero_title {
