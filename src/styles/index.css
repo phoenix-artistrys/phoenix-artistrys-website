@@ -68,8 +68,7 @@ iframe {
   height: auto;
   padding: 1rem;
   text-align: left;
-  background: #101010db;
-  box-shadow: 0px 0px 18rem 13rem #101010;
+  background: #101010e9;
 }
 
 /* custom */
@@ -239,11 +238,14 @@ span.arrow_down {
     inset -0.1px -0.1px 1px #ffffffc5;
   border: #878aaa75 1px solid;
   border-radius: 3.2rem;
+  backdrop-filter: blur(10px);
+  /* legacy chrome safari support */
+  -webkit-backdrop-filter: blur(10px);
   transition: 0.3 all;
 }
 
 span.arrow_down:hover {
-  border: solid 2px #ffffff;
+  border: solid 1px #ffffff;
   animation: transformUpDown 0.7s ease-in-out infinite;
 }
 
