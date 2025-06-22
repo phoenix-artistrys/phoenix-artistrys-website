@@ -37,6 +37,7 @@ h4 {
 /* Questions MUI styles */
 [id^="panel"][id$="-header"] {
   background-color: #282828;
+  border: none;
   font-size: 1.5rem;
   font-weight: 700;
   border-radius: 0.7rem;
