@@ -25,9 +25,13 @@
   transition: 0.5s;
 }
 
-.sample_pack_image:hover {
-  transform: translate(0px, -3rem);
-  box-shadow: 0px 0px 45px 2px #fffeeba4;
+/* desktop */
+
+@media (min-width: 60rem) {
+  .sample_pack_image:hover {
+    transform: translate(0px, -3rem);
+    box-shadow: 0px 0px 45px 2px #fffeeba4;
+  }
 }
 
 /* mobile */
