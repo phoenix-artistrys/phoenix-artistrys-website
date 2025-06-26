@@ -75,7 +75,7 @@ function Submit() {
         </section>
 
         {/* Page Body */}
-        <section className="section flex_center" id="phoenix_main">
+        <section className="section flex_center dark_tint_light" id="phoenix_main">
           <img
             src="/images/envelope_no_shadow.png"
             alt="Envelope image"
