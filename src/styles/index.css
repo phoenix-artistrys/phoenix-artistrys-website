@@ -86,11 +86,10 @@ iframe {
   background-color: #2828287e;
   box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffa4;
   border: #878aaa75 1px solid;
-  border-radius: 3.2rem;
+  border-radius: 4rem;
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 3.2rem;
 }
 
 .opacity_70 {
