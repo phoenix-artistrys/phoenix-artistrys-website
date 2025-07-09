@@ -23,7 +23,7 @@ nav {
   border-radius: 2rem;
   background-color: #1010104f;
   box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
-    inset -0.1px -0.1px 1px #ffffffc5;
+    inset -0.1px -0.1px 1px #ffffffc5, 0px 0px 3rem #101010;
   border: #878aaa75 1px solid;
   border-radius: 3.2rem;
   backdrop-filter: blur(10px);
