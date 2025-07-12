@@ -22,13 +22,13 @@ nav {
   padding: 1.8rem 0.7rem;
   border-radius: 2rem;
   background-color: #1010104f;
-  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
-    inset -0.1px -0.1px 1px #ffffffc5, 0px 0px 3rem #101010;
+  box-shadow: inset 0px 0px 5px #aa87877d, inset 1px 1px 0px #b4b4b4ec,
+    inset -1px -1px 0px #b4b4b4ec, 0px 0px 3rem #101010;
   border: #878aaa75 1px solid;
   border-radius: 3.2rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   /* legacy chrome safari support */
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
   color: #fffeeb;
   pointer-events: all;
 }

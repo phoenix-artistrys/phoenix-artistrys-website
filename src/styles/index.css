@@ -263,9 +263,8 @@ button,
   font-family: inherit;
   color: #fffeeb;
   background: #101010a1;
-  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
-    inset -0.1px -0.1px 1px #ffffffc5;
-  border: #878aaa75 1px solid;
+  box-shadow: inset 1px 1px 0px #a0a0a0ec, inset -1px -1px 0px #a0a0a0ec;
+  border: none;
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);
@@ -307,9 +306,8 @@ button:focus-visible,
   text-align: center;
   color: #000000;
   background: #fc980f;
-  background: linear-gradient(250deg, #fc980f 0%, #ebe62c 100%);
-  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
-    inset -0.1px -0.1px 1px #ffffffc5;
+  background: linear-gradient(250deg, #fc990fed 0%, #ebe62ced 100%);
+  box-shadow: inset 1px 1px 0px #ffffffec, inset -1px -1px 0px #ffffffec;
   border: none;
   border-radius: 2.2rem;
   cursor: pointer;
@@ -344,11 +342,12 @@ button:focus-visible,
 .blue_button_link {
   padding: 0.6em 0.7em;
   background: #0074b2;
-  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #98f3ff,
-    inset -0.1px -0.1px 1px #98f3ffcf;
+  border: none;
+  box-shadow: inset 1px 1px 0px #afe1efec, inset -1px -1px 0px #afe1efec;
 }
 
 .blue_button_link:hover {
+  border: none;
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
