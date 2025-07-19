@@ -10,7 +10,7 @@ function Sample_Packs() {
 
   return (
     <div
-      className="block_background_white block_background_dark block_padding"
+      className="block_background_dark block_padding"
       id="sample_packs"
       data-aos="fade-up"
       data-aos-duration="1000"

@@ -6,7 +6,7 @@ AOS.init();
 function Artists() {
   return (
     <div
-      className="block_background_white block_background_dark block_artists"
+      className="block_background_dark block_artists"
       id="artists"
       data-aos="fade-up"
       data-aos-duration="1000"
