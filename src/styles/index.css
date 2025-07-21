@@ -59,6 +59,17 @@ iframe {
 
 /* sections/containers */
 
+.flex_row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex_gap {
+  gap: 3rem;
+}
+
 .section {
   z-index: 1;
   display: flex;
@@ -179,7 +190,7 @@ summary {
   z-index: 4;
   padding: 0rem;
   margin-bottom: 11rem;
-  font-size: 3rem;
+  font-size: 3.3rem;
   text-align: center;
   line-height: 1.1;
   color: #fffeeb;
@@ -213,6 +224,11 @@ summary {
 
 .glow {
   text-shadow: 0px 0px 35px #ffbab7;
+}
+
+.mobile_title_large {
+  font-size: 4rem;
+  margin-bottom: 15rem;
 }
 
 /* links */
@@ -388,9 +404,16 @@ button:focus-visible,
 
 /* desktop */
 
-@media (min-width: 50rem) {
+@media (min-width: 60rem) {
   iframe {
     width: 70%;
+  }
+
+  .flex_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .section {

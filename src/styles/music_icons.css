@@ -37,7 +37,7 @@
 
 /* mobile */
 
-@media (max-width: 50em) {
+@media (max-width: 60em) {
   .music_icons {
     border-radius: 4rem;
   }
