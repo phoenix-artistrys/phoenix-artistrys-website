@@ -55,8 +55,8 @@ function Home() {
             <a href="#music_icons_container" className="hero_link">
               Listen
             </a>
+            <Arrow_Down to={link_to} />
           </div>
-          <Arrow_Down to={link_to} />
         </section>
         {/* page Body */}
         <section className="section" id="phoenix_main">

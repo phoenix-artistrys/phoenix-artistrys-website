@@ -61,7 +61,9 @@ function Submit() {
       <main id="maincontent">
         {/* Banner */}
         <section className="banner_content lighter_filter" id="submit_banner">
-          <h1 className="hero_title" tabIndex={0}>Submission</h1>
+          <h1 className="hero_title" tabIndex={0}>
+            Submission
+          </h1>
           <div id="hero_button_div">
             <Link
               to="/"
@@ -70,19 +72,24 @@ function Submit() {
             >
               Home
             </Link>
+            <Arrow_Down to={link_to} />
           </div>
-          <Arrow_Down to={link_to} />
         </section>
 
         {/* Page Body */}
-        <section className="section flex_center dark_tint_light" id="phoenix_main">
+        <section
+          className="section flex_center dark_tint_light"
+          id="phoenix_main"
+        >
           <img
             src="/images/envelope_no_shadow.png"
             alt="Envelope image"
             className="mail_img"
             onContextMenu={(e) => e.preventDefault()}
           />
-          <h2 id="submit_header" tabIndex={0}>Submit Your Music</h2>
+          <h2 id="submit_header" tabIndex={0}>
+            Submit Your Music
+          </h2>
           {/* Submission form */}
           <form
             name="submit"
