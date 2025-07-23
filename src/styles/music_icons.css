@@ -13,10 +13,10 @@
   margin: 3rem 0rem;
   margin-bottom: 10rem;
   padding: 2rem 0rem;
-  background-color: #2828287e;
+  background-color: #1010107e;
   box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ff;
   border: #878aaa75 1px solid;
-  border-radius: 3.2rem;
+  border-radius: 10rem;
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);
@@ -29,45 +29,40 @@
 }
 
 .music_img_link:hover {
-  filter: drop-shadow(0px 0px 25px #a9d8ffb2);
-  transform: scale(1.2) rotate(-7deg);
+  filter: drop-shadow(0px 0px 35px #a9d8ff75);
+  animation: springy 0.8s;
+  /* transform: scale(1.2) rotate(-7deg); */
   transition: 0.1s linear;
-}
-
-#insta {
-  width: 90px;
-  height: 90px;
-}
-
-#apple_music {
-  width: 90px;
-  height: 90px;
-}
-
-#spotify {
-  width: 90px;
-  height: 90px;
 }
 
 /* mobile */
 
-@media (max-width: 50em) {
+@media (max-width: 60em) {
+  .music_icons {
+    border-radius: 4rem;
+  }
+
   .music_img_link {
-    padding: 1.2rem;
+    padding: 0.8rem;
   }
+}
 
-  #insta {
-    width: 120px;
-    height: 120px;
+/* animations */
+
+@keyframes springy {
+  0% {
+    transform: scale(0.96);
   }
-
-  #apple_music {
-    width: 120px;
-    height: 120px;
+  50% {
+    transform: scale(1.30);
   }
-
-  #spotify {
-    width: 120px;
-    height: 120px;
+  75% {
+    transform: scale(0.99);
+  }
+  90% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
   }
 }

@@ -24,8 +24,9 @@
   height: auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  box-shadow: 0px 0px 25px #fffeebc8;
+  box-shadow: 0px 0px 3rem #fffeebb6;
   border-radius: 1rem;
+  opacity: 0.9;
   pointer-events: none;
 }
 
@@ -142,9 +143,8 @@ fieldset {
   margin-top: 1rem;
   margin-bottom: 3rem;
   padding: 1rem 1.5rem;
-  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
-    inset -0.1px -0.1px 1px #ffffffc5;
-  border: #878aaa75 1px solid;
+  box-shadow: inset 1px 1px 0px #ffffffec, inset -1px -1px 0px #ffffffec;
+  border: none;
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);

@@ -22,26 +22,43 @@ function Header({ navlink, navlink_text }) {
 
   return (
     <header style={{ opacity }}>
-      <nav>
-        <menu>
-          <li>
-            <Link
-              to="/"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              <img src={Phoenix} alt="Phoenix Logo" className="phoenix_logo" />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to={navlink}
-              className="call_to_action"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              {navlink_text}
-            </Link>
-          </li>
-        </menu>
+      <nav class="GlassContainer">
+        <div class="GlassContent">
+          <menu>
+            <li>
+              <Link
+                to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                <img
+                  src={Phoenix}
+                  alt="Phoenix Logo"
+                  className="phoenix_logo"
+                />
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={navlink}
+                className="call_to_action"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                {navlink_text}
+              </Link>
+            </li>
+          </menu>
+        </div>
+        <div class="GlassMaterial">
+          <div class="GlassEdgeReflection"></div>
+          <div class="GlassEmbossReflection"></div>
+          <div class="GlassRefraction"></div>
+          <div class="GlassBlur"></div>
+          <div class="BlendLayers"></div>
+          <div class="BlendEdge"></div>
+          <div class="Highlight"></div>
+          <div class="Contrast"></div>
+          <div class="Brightness"></div>
+        </div>
       </nav>
     </header>
   );

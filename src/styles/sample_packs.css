@@ -17,17 +17,25 @@
 /* images */
 
 .sample_pack_image {
-  width: 15rem;
+  width: 14rem;
   height: auto;
-  margin-left: -5rem;
-  border-radius: 1.2rem;
+  border-radius: 1.6rem;
+  border: #ffffff34 1px solid;
   box-shadow: 0px 0px 18px 2px #101010;
   transition: 0.5s;
 }
 
 /* desktop */
 
-@media (min-width: 60rem) {
+@media (min-width: 70rem) {
+  .sample_pack_container {
+    margin-left: 10rem;
+  }
+
+  .sample_pack_image {
+    margin-left: -10.5rem;
+  }
+
   .sample_pack_image:hover {
     transform: translate(0px, -3rem);
     box-shadow: 0px 0px 45px 2px #fffeeba4;
@@ -36,13 +44,13 @@
 
 /* mobile */
 
-@media (max-width: 60rem) {
+@media (max-width: 70rem) {
   #sample_packs {
-    height: auto;
     padding: 3rem 1rem;
   }
 
   .sample_pack_image {
     width: 8rem;
+    margin-left: -5rem;
   }
 }

@@ -41,7 +41,7 @@ function Home() {
       <main id="maincontent">
         {/* banner */}
         <section className="banner_content">
-          <h1 className="hero_title" tabIndex={0}>
+          <h1 className="hero_title mobile_title_large" tabIndex={0}>
             Phoenix Artistrys
           </h1>
           <div id="hero_button_div">
@@ -55,8 +55,8 @@ function Home() {
             <a href="#music_icons_container" className="hero_link">
               Listen
             </a>
+            <Arrow_Down to={link_to} />
           </div>
-          <Arrow_Down to={link_to} />
         </section>
         {/* page Body */}
         <section className="section" id="phoenix_main">
@@ -88,11 +88,13 @@ function Home() {
             {/* artists */}
             <Artists />
 
-            {/* sample packs */}
-            <Sample_Packs />
+            <div className="flex_row flex_gap">
+              {/* sample packs */}
+              <Sample_Packs />
 
-            {/* faq */}
-            <Faq_Block />
+              {/* faq */}
+              <Faq_Block />
+            </div>
 
             {/* about */}
             <About />
