@@ -198,7 +198,7 @@ summary {
   background: linear-gradient(0deg, #ffffff 0%, #ffffff 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  text-shadow: 0px 2px 6px #d7d7d7;
+  text-shadow: 0px 2px 3px #d7d7d7;
 }
 
 .header_dark {
@@ -320,7 +320,7 @@ button:focus-visible,
   width: 7rem;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.7em 1.4em;
   font-size: 1em;
   font-weight: bold;
   font-family: inherit;
