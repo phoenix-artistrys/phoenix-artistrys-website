@@ -67,7 +67,7 @@ function Home() {
 
             {/* featured video */}
             <iframe
-              src="https://www.youtube-nocookie.com/embed/qWbVPV-Hq5A?si=mHmd77xuZYzH_XjM&amp;start=1"
+              src="https://www.youtube-nocookie.com/embed/ydRRaeJqEc4?si=HuYV_9kYRCz4vxog"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               frameBorder="0"
