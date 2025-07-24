@@ -88,13 +88,13 @@ function Home() {
             {/* artists */}
             <Artists />
 
-            <div className="flex_row flex_gap">
+            {/* <div className="flex_row flex_gap"> */}
               {/* sample packs */}
               <Sample_Packs />
 
               {/* faq */}
               <Faq_Block />
-            </div>
+            {/* </div> */}
 
             {/* about */}
             <About />
