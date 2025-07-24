@@ -24,6 +24,7 @@ import Header from "../components/Header";
 // banner video
 import Banner_Video from "/video/phoenix_hero.mp4"; // Import the banner video
 import Top_Banner from "../components/Top_Banner";
+import Video_Poster from "/images/video_placeholder.png"; // Import the video poster
 
 // artwork
 import phoenix_logo_large from "/images/phoenix_logo_large.png";
@@ -36,11 +37,11 @@ function Home() {
   return (
     <>
       <Header navlink="/submit#submit_banner" navlink_text="Submit" />
-      <Top_Banner Banner_Video={Banner_Video} />
+      <Top_Banner Banner_Video={Banner_Video} Video_Poster={Video_Poster} />
       <main id="maincontent">
         {/* banner */}
         <section className="banner_content">
-          <h1 className="hero_title" tabIndex={0}>
+          <h1 className="hero_title mobile_title_large" tabIndex={0}>
             Phoenix Artistrys
           </h1>
           <div id="hero_button_div">
@@ -54,8 +55,8 @@ function Home() {
             <a href="#music_icons_container" className="hero_link">
               Listen
             </a>
+            <Arrow_Down to={link_to} />
           </div>
-          <Arrow_Down to={link_to} />
         </section>
         {/* page Body */}
         <section className="section" id="phoenix_main">
@@ -66,7 +67,7 @@ function Home() {
 
             {/* featured video */}
             <iframe
-              src="https://www.youtube-nocookie.com/embed/qWbVPV-Hq5A?si=mHmd77xuZYzH_XjM&amp;start=1"
+              src="https://www.youtube-nocookie.com/embed/ydRRaeJqEc4?si=HuYV_9kYRCz4vxog"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               frameBorder="0"
@@ -87,11 +88,13 @@ function Home() {
             {/* artists */}
             <Artists />
 
-            {/* sample packs */}
-            <Sample_Packs />
+            {/* <div className="flex_row flex_gap"> */}
+              {/* sample packs */}
+              <Sample_Packs />
 
-            {/* faq */}
-            <Faq_Block />
+              {/* faq */}
+              <Faq_Block />
+            {/* </div> */}
 
             {/* about */}
             <About />

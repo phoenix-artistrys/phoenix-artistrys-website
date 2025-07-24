@@ -43,7 +43,7 @@ function Music_Icons() {
 
         <a href="https://music.apple.com/us/artist/phoenix-artistrys/1522101882">
           <img
-            src="/music_icons/apple_music.svg"
+            src="/music_icons/apple_music.png"
             alt="Amazon Music Icon"
             className="music_img_link"
             id="apple_music"

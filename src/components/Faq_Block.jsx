@@ -9,7 +9,7 @@ AOS.init();
 function Faq_Block() {
   return (
     <div
-      className="block_background_white block_background_dark block_padding block_faq"
+      className="block_background_dark block_padding block_faq"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-anchor-placement="top-bottom"
