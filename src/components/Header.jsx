@@ -22,8 +22,8 @@ function Header({ navlink, navlink_text }) {
 
   return (
     <header style={{ opacity }}>
-      <nav class="GlassContainer">
-        <div class="GlassContent">
+      <nav className="GlassContainer">
+        <div className="GlassContent">
           <menu>
             <li>
               <Link
@@ -48,16 +48,16 @@ function Header({ navlink, navlink_text }) {
             </li>
           </menu>
         </div>
-        <div class="GlassMaterial">
-          <div class="GlassEdgeReflection"></div>
-          <div class="GlassEmbossReflection"></div>
-          <div class="GlassRefraction"></div>
-          <div class="GlassBlur"></div>
-          <div class="BlendLayers"></div>
-          <div class="BlendEdge"></div>
-          <div class="Highlight"></div>
-          <div class="Contrast"></div>
-          <div class="Brightness"></div>
+        <div className="GlassMaterial">
+          <div className="GlassEdgeReflection"></div>
+          <div className="GlassEmbossReflection"></div>
+          <div className="GlassRefraction"></div>
+          <div className="GlassBlur"></div>
+          <div className="BlendLayers"></div>
+          <div className="BlendEdge"></div>
+          <div className="Highlight"></div>
+          <div className="Contrast"></div>
+          <div className="Brightness"></div>
         </div>
       </nav>
     </header>
