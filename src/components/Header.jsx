@@ -10,7 +10,7 @@ function Header({ navlink, navlink_text }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const newOffset = Math.min(scrollY, 805); // Move down max 100px
+      const newOffset = Math.min(scrollY, 800); // Move down max 100px
       setOffset(newOffset);
     };
 
