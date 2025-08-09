@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 import Phoenix from "/images/phoenix_dark_logo.png"; // Import the Phoenix logo
 
 function Header({ navlink, navlink_text }) {
-  const [opacity, setOpacity] = useState(0);
+  const [offset, setOffset] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const newOpacity = Math.min(scrollY / 800, 1);
-      setOpacity(newOpacity);
+      const newOffset = Math.min(scrollY, 810); // Move down max 100px
+      setOffset(newOffset);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -21,7 +21,7 @@ function Header({ navlink, navlink_text }) {
   }, []);
 
   return (
-    <header style={{ opacity }}>
+    <header style={{ transform: `translateY(${offset}px)` }}>
       <nav className="GlassContainer">
         <div className="GlassContent">
           <menu>
