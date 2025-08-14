@@ -114,7 +114,8 @@ iframe {
 
 .divider {
   margin: 5rem;
-  border: #565656 1px solid;
+  border: solid 0.1rem #ffffff24;
+  border-radius: 2rem;
 }
 
 .padding_bottom {
@@ -454,3 +455,4 @@ button:focus-visible,
     transform: translateY(0);
   }
 }
+

@@ -1,32 +1,45 @@
 #about_container {
-  margin-bottom: 10rem;
+  margin-bottom: 0rem;
   padding: 1rem;
 }
 
-#about_header {
+/* #about_header {
   font-size: 4rem;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: solid 0.1rem #565656;
+  border-bottom: solid 0.1rem #ffffff24;
   text-shadow: #fffeeb7e 0px 0px 35px;
-}
+} */
 
 #about_sub_header {
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   padding-top: 0.1rem;
-  border-radius: 3.2rem;
-  text-shadow: #fffeeb7e 0px 0px 35px;
+  color: #fffeeb;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(0deg, #ffffff 0%, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 0px 2px 3px #d7d7d7;
 }
 
 #about_sub_header:hover {
+  text-shadow: 0 0 30px #fffeeb;
   animation: gentleShake 0.5s ease-in-out;
   transition: all 0.3s ease;
+}
+
+details > summary {
+  list-style-type: "🎶 ";
+}
+details > summary::-webkit-details-marker {
+  display: none;
 }
 
 #about_details {
   margin-bottom: 1.5rem;
   border-radius: 3.2rem;
-   text-shadow: #fffeeb7e 0px 0px 35px;
+  text-shadow: #fffeeb7e 0px 0px 35px;
 }
 
 #about_details:hover {
@@ -42,12 +55,12 @@ p {
   cursor: text;
 }
 
-@media (max-width: 50rem) {
-  #about_header {
+@media (min-width: 50rem) {
+  /* #about_header {
     font-size: 2.5rem;
-  }
+  } */
   #about_sub_header {
-    font-size: 1.4rem;
+    font-size: 3rem;
   }
 }
 
@@ -74,17 +87,17 @@ p {
 @keyframes glowingText {
   0% {
     opacity: 0;
-    text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 
-      0 0 7px #008cff, 0 0 10px #008cff;
+    text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 0 0 7px #008cff,
+      0 0 10px #008cff;
   }
   50% {
     opacity: 1;
-    text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 
-      0 0 7px #008cff, 0 0 10px #008cff, 0 0 14px #008cff, 0 0 18px #008cff;
+    text-shadow: 0 0 4px #fffeeb, 0 0 8px #fffeeb, 0 0 7px #008cff,
+      0 0 10px #008cff, 0 0 14px #008cff, 0 0 18px #008cff;
   }
   100% {
     opacity: 1;
-     text-shadow: #fffeeb7e 0px 0px 35px;
+    text-shadow: #fffeeb7e 0px 0px 35px;
   }
 }
 
@@ -93,13 +106,13 @@ p {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-2px);
+    transform: translateX(-3px);
   }
   50% {
-    transform: translateX(2px);
+    transform: translateX(4px);
   }
   75% {
-    transform: translateX(-2px);
+    transform: translateX(-3px);
   }
   100% {
     transform: translateX(0);
