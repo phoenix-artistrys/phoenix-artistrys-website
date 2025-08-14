@@ -1,9 +1,9 @@
 function About() {
   return (
     <div id="about_container">
-      <h2 id="about_header" tabIndex={0}>About</h2>
+      {/* <h2 id="about_header" tabIndex={0}>About</h2> */}
       <details id="about_details">
-        <summary id="about_sub_header">Made by Artists, for Artists</summary>
+        <summary id="about_sub_header" title="Click to expand">Made by Artists, for Artists</summary>
         <p tabIndex={0}>
           Phoenix Artistrys was formed to help underground artists receive more
           acknowledgement for their work! We pride ourselves in our talented
