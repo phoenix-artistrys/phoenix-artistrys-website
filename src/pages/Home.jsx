@@ -32,7 +32,7 @@ import blue_phoenix from "/images/blue_phoenix.png";
 import audiophobia_clear from "/images/audiophobia_clear.png";
 import skremzy_blue from "/images/skremzy_blue.png";
 import nwlogo from "/images/nwlogo.png";
-import Live_Button from "../components/Live_Button.jsx";
+import Live_Block from "../components/Live_Block.jsx";
 
 function Home() {
   return (
@@ -72,7 +72,7 @@ function Home() {
 
             {/* featured video */}
 
-            <Live_Button />
+            <Live_Block />
 
             {/* <iframe
               src="https://www.youtube-nocookie.com/embed/ydRRaeJqEc4?si=HuYV_9kYRCz4vxog"
