@@ -11,7 +11,7 @@ function Live_Block() {
       <a href="https://m.twitch.tv/fireswept/home">
         <img
           src="/images/phoenix_dark_live.png"
-          alt="Instagram Icon"
+          alt="Phoenix purple app icon"
           className="music_img_link live_button"
         />
       </a>
