@@ -32,6 +32,7 @@ import blue_phoenix from "/images/blue_phoenix.png";
 import audiophobia_clear from "/images/audiophobia_clear.png";
 import skremzy_blue from "/images/skremzy_blue.png";
 import nwlogo from "/images/nwlogo.png";
+import Live_Button from "../components/Live_Button.jsx";
 
 function Home() {
   return (
@@ -62,11 +63,18 @@ function Home() {
         <section className="section" id="phoenix_main">
           <div id="phoenix_main_inner" className="home_section">
             <h2 className="center_text padding_bottom" tabIndex={0}>
-              Featured
+              Fireswept
             </h2>
 
+            {/* <h2 className="center_text padding_bottom" tabIndex={0}>
+              Featured
+            </h2> */}
+
             {/* featured video */}
-            <iframe
+
+            <Live_Button />
+
+            {/* <iframe
               src="https://www.youtube-nocookie.com/embed/ydRRaeJqEc4?si=HuYV_9kYRCz4vxog"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -77,7 +85,7 @@ function Home() {
               data-aos-duration="1000"
               data-aos-anchor-placement="top-bottom"
               data-aos-once="false"
-            ></iframe>
+            ></iframe> */}
 
             <div className="divider"></div>
 
@@ -89,11 +97,11 @@ function Home() {
             <Artists />
 
             {/* <div className="flex_row flex_gap"> */}
-              {/* sample packs */}
-              <Sample_Packs />
+            {/* sample packs */}
+            <Sample_Packs />
 
-              {/* faq */}
-              <Faq_Block />
+            {/* faq */}
+            <Faq_Block />
             {/* </div> */}
 
             {/* about */}

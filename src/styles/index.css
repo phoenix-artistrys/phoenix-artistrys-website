@@ -374,6 +374,33 @@ button:focus-visible,
   transition: all 0.3s ease;
 }
 
+.purple_button_link {
+  padding: 0.6em 0.7em;
+  background: #9747ff;
+  border: none;
+  box-shadow: inset 1px 1px 0px #e0baffec, inset -1px -1px 0px #e0baffec;
+}
+
+.purple_button_link:hover {
+  border: none;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.dark_purple_button_link {
+  padding: 0.6em 0.7em;
+  background: #212121;
+  color: #9e80ff;
+  border: none;
+  box-shadow: inset 1px 1px 0px #d1b3ffec, inset -1px -1px 0px #d1b3ffec;
+}
+
+.dark_purple_button_link:hover {
+  border: none;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
 /* media */
 
 .video_banner {

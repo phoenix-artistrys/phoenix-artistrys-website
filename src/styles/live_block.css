@@ -1,0 +1,38 @@
+.live_button {
+    width: 220px;
+    height: 220px;
+    background: #a259ff;
+    color: #fff;
+    border: none;
+    border-radius: 56px;
+    padding: 2px;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 rgba(162, 89, 255, 0.7);
+    animation: purple_pulse 1.5s infinite;
+}
+
+#live_block {
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/images/fireswept_art_color_dim.png);
+}
+
+@keyframes purple_pulse {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(162, 89, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 10px 40px rgba(162, 89, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 10px 0 rgba(162, 89, 255, 0);
+    }
+}
