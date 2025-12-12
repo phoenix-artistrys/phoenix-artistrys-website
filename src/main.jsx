@@ -22,6 +22,9 @@ import "./styles/about.css";
 import "./styles/artwork.css";
 import "./styles/faq_block.css";
 
+// live button css
+import "./styles/live_block.css";
+
 // components
 import App from "./App.jsx";
 
