@@ -7,9 +7,10 @@
   border-radius: 4rem;
   margin-bottom: 5rem;
   background-color: #2828287e;
-  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
-    inset -0.1px -0.1px 1px #ffffffc5;
-  border: #878aaa75 1px solid;
+  box-shadow:
+    inset 0px 0px 1px #878aaa7d,
+    inset 0.5px 0.5px 0.5px #f4f5ff;
+  /* border: #878aaa75 1px solid; */
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
   -webkit-backdrop-filter: blur(10px);
@@ -18,7 +19,7 @@
 .artwork_large {
   width: 100%;
   height: auto;
-  border: #878aaa29 1px solid;
+  border: #878aaa29 0.5px solid;
   pointer-events: none;
 }
 

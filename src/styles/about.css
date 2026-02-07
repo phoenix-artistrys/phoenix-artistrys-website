@@ -30,7 +30,7 @@
 }
 
 details > summary {
-  list-style-type: "🎶 ";
+  list-style-type: circle;
 }
 details > summary::-webkit-details-marker {
   display: none;

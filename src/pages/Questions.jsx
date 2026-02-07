@@ -36,8 +36,8 @@ function Questions() {
             >
               Back
             </Link>
+            <Arrow_Down to={link_to} />
           </div>
-          <Arrow_Down to={link_to} />
         </section>
 
         {/* Page Body */}
@@ -45,7 +45,9 @@ function Questions() {
           className="section flex_center phoenix_main_questions"
           id="phoenix_main"
         >
-          <h2 id="questions_header" tabIndex={0}>FAQ</h2>
+          <h2 id="questions_header" tabIndex={0}>
+            FAQ
+          </h2>
           <Accordion />
           <Link
             to="/"
