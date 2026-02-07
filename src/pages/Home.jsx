@@ -63,19 +63,15 @@ function Home() {
         <section className="section" id="phoenix_main">
           <div id="phoenix_main_inner" className="home_section">
             <h2 className="center_text padding_bottom" tabIndex={0}>
-              Fireswept
-            </h2>
-
-            {/* <h2 className="center_text padding_bottom" tabIndex={0}>
               Featured
-            </h2> */}
+            </h2>
 
             {/* featured video */}
 
-            <Live_Block />
-
-            {/* <iframe
-              src="https://www.youtube-nocookie.com/embed/ydRRaeJqEc4?si=HuYV_9kYRCz4vxog"
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/4rYT7dc_-bw?si=qgcq5dAH3FJNr6yO"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               frameBorder="0"
@@ -85,7 +81,7 @@ function Home() {
               data-aos-duration="1000"
               data-aos-anchor-placement="top-bottom"
               data-aos-once="false"
-            ></iframe> */}
+            ></iframe>
 
             <div className="divider"></div>
 
@@ -96,26 +92,32 @@ function Home() {
             {/* artists */}
             <Artists />
 
-            {/* <div className="flex_row flex_gap"> */}
-            {/* sample packs */}
-            <Sample_Packs />
+            {/* live block */}
+            <h2 className="center_text padding_bottom" tabIndex={0}>
+              Fireswept
+            </h2>
+            <Live_Block />
 
-            {/* faq */}
-            <Faq_Block />
-            {/* </div> */}
+            <div className="flex_row flex_gap">
+              {/* sample packs */}
+              <Sample_Packs />
+
+              {/* faq */}
+              <Faq_Block />
+            </div>
 
             {/* about */}
             <About />
-          </div>
 
-          {/* artwork */}
-          <Artwork
-            phoenix_logo_large={phoenix_logo_large}
-            blue_phoenix={blue_phoenix}
-            audiophobia_clear={audiophobia_clear}
-            skremzy_blue={skremzy_blue}
-            nwlogo={nwlogo}
-          />
+            {/* artwork */}
+            <Artwork
+              phoenix_logo_large={phoenix_logo_large}
+              blue_phoenix={blue_phoenix}
+              audiophobia_clear={audiophobia_clear}
+              skremzy_blue={skremzy_blue}
+              nwlogo={nwlogo}
+            />
+          </div>
         </section>
       </main>
     </>

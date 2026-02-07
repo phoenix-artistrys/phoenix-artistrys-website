@@ -79,9 +79,10 @@ fieldset {
   padding: 1rem;
   border-radius: 2rem;
   background: #2020207e;
-  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ff8a,
-    inset -0.1px -0.1px 1px #ffffff6b;
-  border: #878aaa75 1px solid;
+  box-shadow:
+    inset 0px 0px 1px #878aaa7d,
+    inset 0.5px 0.5px 0.5px #f4f5ff;
+  border: #878aaa75 0.5px solid;
   scroll-snap-align: center;
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
@@ -143,7 +144,9 @@ fieldset {
   margin-top: 1rem;
   margin-bottom: 3rem;
   padding: 1rem 1.5rem;
-  box-shadow: inset 1px 1px 0px #ffffffec, inset -1px -1px 0px #ffffffec;
+  box-shadow:
+    inset 1px 1px 0px #ffffffec,
+    inset -1px -1px 0px #ffffffec;
   border: none;
   backdrop-filter: blur(10px);
   /* legacy chrome safari support */
@@ -155,7 +158,9 @@ fieldset {
 .input_base:hover {
   outline: none;
   transform: scale(1.02);
-  box-shadow: inset 0px 0px 8px #fff5e8, 0px 0px 18px #fff5e8;
+  box-shadow:
+    inset 0px 0px 8px #fff5e8,
+    0px 0px 18px #fff5e8;
   border: #eef0ffba 1px solid;
 }
 
@@ -189,7 +194,9 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:hover {
   cursor: pointer;
-  box-shadow: inset 0px 0px 8px #fcbd0f, 0px 0px 18px #fcbd0f;
+  box-shadow:
+    inset 0px 0px 8px #fcbd0f,
+    0px 0px 18px #fcbd0f;
 }
 
 @media (min-width: 50rem) {
